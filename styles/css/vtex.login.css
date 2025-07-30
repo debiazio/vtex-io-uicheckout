@@ -1,0 +1,56 @@
+.container{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.label {
+  text-transform: none;
+  font-size: 1.2rem;
+  color: #2F2B2D;
+  word-wrap: normal;
+}
+
+.profileIcon{
+  width: 100%;
+  height: 1rem;
+  overflow: visible;
+  padding: 0.313rem;
+  display: none;
+}
+
+.container :global(.vtex-button){
+  border: 0;
+  /* padding-top: 28px; */
+}
+.container :global(.vtex-button__label){
+  border: 0;
+  padding: 0;
+  margin: 0 0.438rem 0;
+}
+
+.profile{
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+/* mobile */
+@media screen  and (max-width: 1024px) {
+  .profileIcon{
+    width: 20px;
+    height: 16px;
+    display: none;
+  }
+
+  :global(.vtex-login-2-x-profile), :global(.vtex-login-2-x-label){
+    display: flex;
+    text-align: LEFT;
+    font-size: 0.9rem;
+    color: var(--rosa-pink-escuro)
+  }
+
+
+
+}
+
+

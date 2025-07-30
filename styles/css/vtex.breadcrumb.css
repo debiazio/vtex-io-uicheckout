@@ -1,0 +1,43 @@
+
+.link,
+.term{
+    font-size:1.2rem;
+    color:#7B7979;
+    padding:0;
+    line-height:1;
+}
+.arrow{
+    padding:0 5px;
+}
+.arrow::before{
+    content:"/";
+    font-size:13px;
+    color:#7B7979;
+    padding-right:5px;
+    line-height:1;
+}
+.link:hover,
+.arrow:last-child .link,
+.term{
+    color:#FC87FC;
+}
+.container{
+    padding:10px 0;
+    display:flex;
+    align-items:center;
+    padding: 20px 0 20px 0;
+    flex-wrap: wrap;
+}
+.caretIcon{
+    display:none;
+}
+
+
+/* vtex-breadcrumb-1-x-container */
+
+/* @media screen and (max-width: 1024px) {
+  .container{
+    display: none;
+    color: black;
+  }
+} */

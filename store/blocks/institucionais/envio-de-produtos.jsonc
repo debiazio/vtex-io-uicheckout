@@ -1,0 +1,85 @@
+{
+  "store.custom#envio-de-produtos": {
+    "blocks": [
+      "flex-layout.row#script_rd",
+      "flex-layout.row#envio-de-produtos"
+    ]
+  },
+  "flex-layout.row#envio-de-produtos": {
+    "props": {
+      "blockClass": "pagina-institucional"
+    },
+    "children": [
+      "flex-layout.col#menu-institucionais-envio-produtos-active",
+      "flex-layout.col#conteudo-envio-de-produtos"
+    ],
+    "title": "Página Envio de Produtos"
+  },
+  "flex-layout.col#menu-institucionais-envio-produtos-active": {
+    "props": {
+      "width": "22%",
+      "blockClass": "menu-institucionais"
+    },
+    "children": [
+      "rich-text#titulo-menu-institucionais",
+      "link#instituicionais-quem-somos",
+      "link#institucionais-politica-privacidade",
+      "link#institucionais-formas-pgto",
+      "flex-layout.row#institucionais-envio",
+      "link#institucionais-trocas-e-devolucoes"
+    ],
+    "title": "Menu institucionais - Página Quem Somos"
+  },
+  "flex-layout.row#institucionais-envio": {
+    "props": {
+      "blockClass": "menu-institucionais-active"
+    },
+    "children": [
+      "flex-layout.col#titulo-envio",
+      "flex-layout.col#institucional-icon-active"
+    ]
+  },
+  "flex-layout.col#titulo-envio": {
+    "props": {
+      "blockClass": "col-titulo-inst"
+    },
+    "children": [
+      "rich-text#titulo-item-menu-envio-de-produtos-active"
+    ]
+  },
+
+  "flex-layout.col#conteudo-envio-de-produtos": {
+    "children": [
+      "rich-text#titulo-envio-de-produtos",
+      "rich-text#texto-envio-de-produtos"
+      // "image#envio-produtos"
+    ],
+    "props": {
+      "width": "78%",
+      "blockClass": "conteudo-institucionais"
+    },
+    "title": "Conteúdo Envio de Produtos"
+  },
+
+  "rich-text#titulo-envio-de-produtos": {
+    "props": {
+      "text": "## Envio de Produtos",
+      "blockClass": "titulo-institucionais"
+    },
+    "title": "Titulo - Envio de Produtos"
+  },
+  // "image#envio-produtos":{
+  //   "props": {
+  //     "blockClass": "imagem-envio-produtos",
+  //     "src": "assets/Esquema.webp",
+  //     "alt": "Imagem envio de produtos"
+  //   }
+  // },
+  "rich-text#texto-envio-de-produtos": {
+    "props": {
+      "text": "**Entregas**\n\n**FIQUE ATENTO: O prazo informado através da simulação de frete ou até mesmo no carrinho de compras, inclui dias úteis de fabricação e entrega. Atualmente não trabalhamos com produtos a pronta entrega.**\n\n**Os produtos anunciados com Pronta Entrega, serão despachados em até três dias devido aos processos de emissão de pedido, embalagem e agendamento de coleta.**\n\nNossas entregas são realizadas de acordo com a política de atendimento de cada transportadora disponível para escolha no ato da compra. Algumas transportadoras poderão entregar aos sábados e/ ou feriados. Advertimos que, após a emissão da nota fiscal, monitorem o rastreio da entrega através das informações fornecidas pela equipe do pós-venda da IDEALINE, para evitar possíveis desencontros.\n\nAs embalagens devem ser avaliadas e, em caso de avaria ou violação detectada, recuse a entrega, faça uma ressalva no verso da Nota Fiscal do produto e entre em contato imediatamente com nossa Central de Atendimento pelo Telefone **0800 721 8534**.\n\nA ação mais importante que deve ser realizada no processo de recebimento é justamente verificar se existe alguma anormalidade na mercadoria (danos de transporte), se houver, você deve **REGISTRAR A OCORRÊNCIA E RECUSAR A ENTREGA**, ou seja, você deve estar com o CTE e o canhoto da nota Fiscal e fazer as observações pertinentes, sem isso, a transportadora não irá reconhecer o dano e o prejuízo por danos de transporte será assumido integralmente pelo recebedor, por imposição de Lei, nos termos do artigo 754 do Código Civil.\n\nNossas transportadoras não estão autorizadas a abrir embalagens, subir escadas / elevadores, ou fazer entregas por meios “alternativos” (como cordas, janelas, telhado, etc.) e nem pela instalação de produtos. Eventuais despesas são de responsabilidade do cliente. A entrega poderá ser realizada para terceiros, como parentes e porteiros, desde que sejam previamente autorizados por escrito pelo titular da compra a receber a mercadoria.\n\n**Entrega via Transportadora:** será realizada 1 (uma) tentativa de entrega; em caso de insucesso, a reentrega da mercadoria terá um novo custo de frete, assim como, se devolvida à IDEALINE, e após contato com o cliente. Havendo solicitação de novo envio, um novo frete será cobrado.\n\n**Entrega via Correios:** serão realizadas 3 tentativas de entrega; em caso de insucesso, a mercadoria será devolvida ao Centro de Distribuição responsável pela entrega, onde ficará disponível durante 5 dias úteis para retirada. Havendo solicitação de novo envio pelo cliente, um novo frete será cobrado.\n\nÉ possível acompanhar o status do seu pedido acessando a área logada no site. Você pode consultar o prazo de entrega para sua região após a digitação do CEP na página de pedido. As estimativas de entrega para os produtos adquiridos pela loja virtual da Idealine são sazonais e dependem de região para região.\n\n**ATENÇÃO:** O prazo de entrega inicia-se no dia útil seguinte à emissão da nota fiscal. Todos os dados cadastrais registrados serão avaliados e, caso haja alguma divergência, entraremos em contato. Não nos responsabilizamos por dados cadastrais incorretos.\n\nPara que seu pedido seja entregue com segurança tenha sempre um responsável no endereço de entrega para receber seu pedido e siga as orientações indicados nos e-mails enviados após a compra. Caso a empresa de transporte não encontre alguém para receber seu pedido e assinar o protocolo no local, será cobrado um novo frete para realização da reentrega.\n\n**ATENÇÃO:** **Entrega grátis – Retire na fábrica:** Essa opção aparece para CEP da região metropolitana e Curitiba e algumas cidades próximas. Para que o cliente tenha a opção, caso queira, de fazer a retirada na fábrica da Stermax. O processo de retirada só é autorizado após emissão de Nota Fiscal e liberação do nosso pós-vendas.\n\nPara municípios com acesso por vias fluviais o prazo de entrega é de aproximadamente 30 dias após a chegada em Manaus.\n\n",
+      "blockClass": "conteudo-institucionais"
+    },
+    "title": "conteúdo - Envio de Produtos"
+  }
+}

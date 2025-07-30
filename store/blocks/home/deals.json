@@ -1,0 +1,115 @@
+{
+  "flex-layout.row#deals": {
+    "children": [
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
+      "flex-layout.col#deals4"
+    ],
+    "props": {
+      "blockClass": ["deals", "mobile-deals"]
+    }
+  },
+
+  "flex-layout.col#deals1": {
+    "children": [
+      "image#deal1",
+      "rich-text#deal1",
+      "rich-text#sub-deal1"
+    ]
+  },
+  "image#deal1": {
+    "props": {
+      "src": "assets/frete-icon-caminhao-preto.svg",
+      "maxHeight": "36px"
+    }
+  },
+  "rich-text#deal1": {
+    "props": {
+      "text": "**ENTREGAS PARA TODO O BRASIL**",
+      "blockClass": "deals"
+    }
+  },
+  "rich-text#sub-deal1":{
+    "props": {
+      "text": "Nós entregamos onde for melhor para você e o seu negócio!",
+      "blockClass": ["deals", "sub-mobile-deals"]
+    }
+  },
+
+  "flex-layout.col#deals2": {
+    "children": [
+      "image#deal2",
+      "rich-text#deal2",
+      "rich-text#sub-deal2"
+    ]
+  },
+  "image#deal2": {
+    "props": {
+      "src": "assets/icon-check-preto.svg",
+      "maxHeight": "36px"
+    }
+  },
+  "rich-text#deal2": {
+    "props": {
+      "text": "**GARANTIA DE FÁBRICA**",
+      "blockClass": "deals"
+    }
+  },
+  "rich-text#sub-deal2":{
+    "props": {
+      "text": "Garantia de 12 meses oferecida pelo fabricante",
+      "blockClass": ["deals", "sub-mobile-deals"]
+    }
+  },
+  "flex-layout.col#deals3": {
+    "children": [
+      "image#deal3",
+      "rich-text#deal3",
+      "rich-text#sub-deal3"
+    ]
+  },
+  "image#deal3": {
+    "props": {
+      "src": "assets/icon-cartao-credito-preto.svg",
+      "maxHeight": "36px"
+    }
+  },
+  "rich-text#deal3": {
+    "props": {
+      "text": "**PARCELE EM ATÉ 10X**",
+      "blockClass": "deals"
+    }
+  },
+  "rich-text#sub-deal3":{
+    "props": {
+      "text": "Com a gente você pode parcelar em até 10x sem juros no cartão de crédito",
+      "blockClass": ["deals", "sub-mobile-deals"]
+    }
+  },
+  "flex-layout.col#deals4": {
+    "children": [
+      "image#deal4",
+      "rich-text#deal4",
+      "rich-text#sub-deal4"
+    ]
+  },
+  "image#deal4": {
+    "props": {
+      "src": "assets/icon-barcode-preto.svg",
+      "maxHeight": "36px"
+    }
+  },
+  "rich-text#deal4": {
+    "props": {
+      "text": "**BOLETO PARCELADO**",
+      "blockClass": "deals"
+    }
+  },
+  "rich-text#sub-deal4":{
+    "props": {
+      "text": "Consulte as condições em Formas de Pagamento",
+      "blockClass":["deals", "sub-mobile-deals"]
+    }
+  }
+}

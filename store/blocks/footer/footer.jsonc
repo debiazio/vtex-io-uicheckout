@@ -1,0 +1,365 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.col#newsletter"
+    ],
+    "props": {
+      "blockClass": "newsletter-row"
+    }
+  },
+  "flex-layout.col#newsletter": {
+    "children": [
+      "rich-text#title-newsletter",
+      "newsletter-form"
+    ]
+  },
+  "rich-text#title-newsletter": {
+    "props": {
+      "text": "Seja o primeiro a receber promoções imperdíveis",
+      "blockClass": "title-newsletter"
+    }
+  },
+  "newsletter-form": {
+    "props": {
+      "blockClass": "newsletter-footer"
+    },
+    "children": [
+      "newsletter-input-name",
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  "newsletter-input-name": {
+    "props": {
+      "placeholderText": "Seu nome",
+      "blockClass": "newsletter-footer"
+    }
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Seu email",
+      "blockClass": "newsletter-footer"
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "Enviar"
+    }
+  },
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "flex-layout.col#footer-2-desktop-1",
+      "flex-layout.row#footer-requisitos-merchant",
+      "flex-layout.col#footer-2-desktop-2",
+      "flex-layout.col#footer-2-desktop-4"
+    ],
+    "props": {
+      "blockClass": "footer-2-desktop",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#footer-2-desktop-1": {
+    "children": [
+      "rich-text#title-footer-1",
+      "vtex.menu@2.x:menu#Empresa"
+    ],
+    "props": {
+      "blockClass": "footer-2-desktop"
+    }
+  },
+  "rich-text#title-footer-1": {
+    "props": {
+      "text": "Empresa",
+      "blockClass": "title-footer"
+    }
+  },
+  "flex-layout.col#footer-2-desktop-2": {
+    "children": [
+      "rich-text#title-footer-2",
+      "flex-layout.row#methods-payments",
+      "image#payment-4"
+    ],
+    "props": {
+      "blockClass": "imagens-payments-desktop"
+    }
+  },
+  "rich-text#title-footer-2": {
+    "props": {
+      "text": "Formas de Pagamento",
+      "blockClass": "title-footer"
+    }
+  },
+  "flex-layout.row#methods-payments": {
+    "children": [
+      "image#payment-1",
+      "image#payment-2",
+      "image#payment-3"
+    ],
+    "props": {
+      "blockClass": "metodos-pagamentos"
+    }
+  },
+  "image#payment-1": {
+    "props": {
+      "src": "assets/payment-3.svg",
+      "alt": "Bandeira Visa",
+      "blockClass": "cartoes"
+    }
+  },
+  "image#payment-2": {
+    "props": {
+      "src": "assets/payment-4.svg",
+      "alt": "Bandeira Mastercard",
+      "blockClass": "cartoes"
+    }
+  },
+  "image#payment-3": {
+    "props": {
+      "src": "assets/payment-2.svg",
+      "alt": "Boleto bancário",
+      "blockClass": "cartoes"
+    }
+  },
+  "image#payment-4": {
+    "props": {
+      "src": "assets/payMee.webp",
+      "maxWidth": "320px",
+      "alt": "Pagamentos processados pela PayMee",
+      "link": {
+        "label": "PayMee",
+        "openNewTab": true,
+        "url": "https://www.paymee.com.br/"
+      }
+    }
+  },
+  "flex-layout.col#footer-2-desktop-3": {
+    "children": [
+      "rich-text#title-footer-3",
+      "vtex.menu@2.x:menu#fique-conosco"
+    ],
+    "props": {
+      "blockClass": "footer-2-desktop",
+      "width": "100%"
+    }
+  },
+  "rich-text#title-footer-3": {
+    "props": {
+      "text": "Fique Conosco",
+      "blockClass": "title-footer"
+    }
+  },
+  "flex-layout.col#footer-2-desktop-4": {
+    "children": [
+      "rich-text#title-footer-4",
+      "flex-layout.row#footer-2-desktop-4"
+    ],
+    "props": {
+      "blockClass": "footer-2-desktop"
+    }
+  },
+  "rich-text#title-footer-4": {
+    "props": {
+      "text": "Compre com Segurança",
+      "blockClass": "title-footer"
+    }
+  },
+  "flex-layout.row#footer-2-desktop-4": {
+    "children": [
+      "image#selosEncrypt",
+      "image#selosCertisign",
+      "image#vtex"
+    ]
+  },
+  "image#selosCertisign": {
+    "props": {
+      "src": "assets/seloSeguroCertiSign.svg",
+      "alt": "Selo Certisign site seguro",
+      "link": {
+        "label": "Certisign",
+        "openNewTab": true,
+        "url": "#"
+      },
+      "blockClass": "seguranca"
+    }
+  },
+  "image#selosEncrypt": {
+    "props": {
+      "src": "assets/letsEncrypt.svg",
+      "alt": "Selo Let's Encrypt site seguro",
+      "link": {
+        "label": "Let's Encrypt",
+        "openNewTab": true,
+        "url": "https://letsencrypt.org/pt-br/"
+      },
+      "blockClass": "seguranca"
+    }
+  },
+  "image#vtex": {
+    "props": {
+      "src": "assets/pngegg.png",
+      "maxWidth": "80px",
+      "alt": "Ícone VTEX",
+      "link": {
+        "label": "VTEX",
+        "openNewTab": true,
+        "url": "https://vtex.com/pt-br/"
+      },
+      "blockClass": "seguranca"
+    }
+  },
+  // ADD PARA REQUISITOS GOOGLE MERCHANT
+  "flex-layout.row#footer-requisitos-merchant": {
+    "props": {
+      "blockClass": "footer-merchant-desktop",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.row#footer-merchant-desktop-horario-linha1",
+      "flex-layout.row#footer-merchant-desktop-horario-linha2"
+    ]
+  },
+  // COLUNA HORÁRIO LINHA 1
+  "flex-layout.row#footer-merchant-desktop-horario-linha1": {
+    "props": {
+      "blockClass": "footer-merchant-desktop-linhas",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.col#footer-merchant-desktop-contatos",
+      "flex-layout.col#footer-2-desktop-3"
+    ]
+  },
+  // COLUNA HORÁRIO LINHA 2
+  "flex-layout.row#footer-merchant-desktop-horario-linha2": {
+    "children": [
+      "flex-layout.col#footer-merchant-desktop-horario"
+    ]
+  },
+  // COLUNA CONTATOS
+  "flex-layout.col#footer-merchant-desktop-contatos": {
+    "props": {
+      "blockClass": "col-contatos-merchant-desktop",
+      "width": "100%"
+    },
+    "children": [
+      "rich-text#footer-merchant-title",
+      "rich-text#footer-merchant-desktop-contato"
+    ]
+  },
+  "rich-text#footer-merchant-title": {
+    "props": {
+      "blockClass": "title-footer",
+      "text": "Fale com a Idealine"
+    }
+  },
+  "rich-text#footer-merchant-desktop-contato": {
+    "props": {
+      "blockClass": "contato-merchant-desktop",
+      "text": "**Contato:** (41) 3668-2144"
+    }
+  },
+  // COLUNA HORÁRIO
+  "flex-layout.col#footer-merchant-desktop-horario": {
+    "props": {
+      "blockClass": "col-horario-merchant-desktop"
+    },
+    "children": [
+      "rich-text#footer-merchant-title-horario",
+      "rich-text#footer-merchant-desktop-horario",
+      "rich-text#footer-merchant-desktop-horario2"
+    ]
+  },
+  "rich-text#footer-merchant-title-horario": {
+    "props": {
+      "blockClass": "title-footer",
+      "text": "Horário de Atendimento"
+    }
+  },
+  "rich-text#footer-merchant-desktop-horario": {
+    "props": {
+      "blockClass": "horario-merchant-desktop",
+      "text": "- **Vendas**: de segunda a sexta, das **8h às 22h**; sábado, das **10h às 19h30**."
+    }
+  },
+  "rich-text#footer-merchant-desktop-horario2":
+  {
+    "props": {
+      "blockClass": "horario-merchant-desktop",
+      "text": "- **Pós-venda**: de segunda a sábado, das **8h às 22h**."
+    }
+  },
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "rich-text#footer"
+    ],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "Os preços, as ações promocionais e as condições de pagamento são exclusivas para o site. Os produtos disponibilizados no site possuem estoque limitado, estando sujeitos à disponibilidade no momento da efetivação e confirmação da compra. O site www.idealine.com.br é administrado por 2025® IDEALINE COMERCIAL LTDA., CNPJ 06.331.320/0001-00, com sede na Rua Inajá, 695, Sala E-commerce, CEP 83324-225, Jardim Pedro Demeterco, Pinhais – PR. Todos os direitos reservados.",
+      "blockClass": "footer"
+    }
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#menus-accordion-mobile",
+      "flex-layout.row#footer-requisitos-merchant",
+      "flex-layout.row#2-footer-mobile"
+    ]
+  },
+  "flex-layout.row#menus-accordion-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-mobile"
+    ],
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "blockClass": "footer-mobile-principal"
+    }
+  },
+  "flex-layout.row#2-footer-mobile": {
+    "children": [
+      "flex-layout.col#footer-1-mobile"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "accepted-payment-methods",
+      "social-networks",
+      "rich-text#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "Os preços, as ações promocionais e as condições de pagamento são exclusivas para o site. Os produtos disponibilizados no site possuem estoque limitado, estando sujeitos à disponibilidade no momento da efetivação e confirmação da compra. O site www.idealine.com.br é administrado por 2025® IDEALINE COMERCIAL LTDA., CNPJ 06.331.320/0001-00, com sede na Rua Inajá, 695, Sala E-commerce, CEP 83324-225, Jardim Pedro Demeterco, Pinhais – PR. Todos os direitos reservados.",
+      "blockClass": "footer"
+    }
+  }
+}

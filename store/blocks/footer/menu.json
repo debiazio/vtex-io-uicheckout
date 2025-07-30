@@ -1,0 +1,419 @@
+{
+  "vtex.menu@2.x:menu#Empresa": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer"
+    },
+    "children": [
+      "menu-item#quem-somos",
+      "menu-item#Politica-privacidade",
+      "menu-item#Contato",
+      "menu-item#Formas-Pagamento",
+      "menu-item#envio-de-produtos",
+      "menu-item#trocas-e-devolucoes"
+    ]
+  },
+  "menu-item#quem-somos": {
+    "props": {
+      "id": "menu-item-quem-somos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/quem-somos",
+        "noFollow": false,
+        "tagTitle": "Quem Somos",
+        "text": "Quem Somos"
+      },
+      "blockClass": "menu-footer-filho"
+    }
+  },
+  "menu-item#Departamentos": {
+    "props": {
+      "id": "menu-item-Departamentos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Departamentos",
+        "text": "Departamentos"
+      },
+      "blockClass": "menu-footer-filho"
+    }
+  },
+  "menu-item#Politica-privacidade": {
+    "props": {
+      "id": "menu-item-policita-privacidade",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/politica-privacidade",
+        "noFollow": false,
+        "tagTitle": "Política de Privacidade",
+        "text": "Política de Privacidade"
+      },
+      "blockClass": "menu-footer-filho"
+    }
+  },
+  "menu-item#Contato": {
+    "props": {
+      "id": "menu-item-Contato",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/fale-conosco",
+        "noFollow": false,
+        "tagTitle": "Contato",
+        "text": "Contato"
+      },
+      "blockClass": "menu-footer-filho"
+    }
+  },
+  "menu-item#Formas-Pagamento": {
+    "props": {
+      "id": "menu-item-Formas-Pagamento",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/formas-pagamento",
+        "noFollow": false,
+        "tagTitle": "Formas de Pagamento",
+        "text": "Formas de Pagamento"
+      },
+      "blockClass": "menu-footer-filho"
+    }
+  },
+  "menu-item#envio-de-produtos": {
+    "props": {
+      "id": "menu-item-envio-de-produtos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/envio-de-produtos/",
+        "noFollow": false,
+        "tagTitle": "Envio de produtos",
+        "text": "Envio de produtos"
+      },
+      "blockClass": "menu-footer-filho"
+    }
+  },
+  "menu-item#trocas-e-devolucoes": {
+    "props": {
+      "id": "menu-item-trocas-e-devolucoes",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/trocas-e-devolucoes",
+        "noFollow": false,
+        "tagTitle": "Trocas e devoluções",
+        "text": "Trocas e devoluções"
+      },
+      "blockClass": "menu-footer-filho"
+    }
+  },
+  "vtex.menu@2.x:menu#fique-conosco": {
+    "props": {
+      "blockClass": "menu-footer",
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.row#fique-conosco"
+    ]
+  },
+
+  "flex-layout.row#fique-conosco": {
+    "props": {
+      "blockClass": "redes-sociais-footer"
+    },
+    "children": [
+      "image#facebook",
+      "image#instagram",
+      "image#youtube"
+    ]
+  },
+
+  "image#facebook": {
+    "props": {
+      "src": "assets/facebook.png",
+      "alt": "ícone facebook",
+      "link": {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/idealineautoclaves",
+        "openNewTab": true
+      }
+    }
+  },
+  "image#instagram": {
+    "props": {
+      "src": "assets/instagram.png",
+      "alt": "ícone instagram",
+      "link": {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/idealine_autoclaves/",
+        "openNewTab": true
+      }
+    }
+  },
+  "image#youtube": {
+    "props": {
+      "src": "assets/youtube.png",
+      "alt": "ícone Youtube",
+      "link": {
+        "label": "Youtube",
+        "url": "https://www.youtube.com/channel/UCiA0juVQujppyBHeLgDMLXQ",
+        "openNewTab": true
+      }
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "conteiner-footer"
+    },
+    "children": [
+      "menu-item#empresa-mobile",
+      "flex-layout.row#formas-de-pagto-mobile",
+      "flex-layout.row#fique-conosco-mobile",
+      "flex-layout.row#compre-com-seguranca-mobile"
+    ]
+  },
+
+  "menu-item#empresa-mobile": {
+    "props": {
+      "id": "menu-item-empresa",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Empresa",
+        "text": "Empresa"
+      },
+      "blockClass": "menu-footer-accordion-conteiner"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#empresa-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#empresa-mobile": {
+    "children": ["vtex.menu@2.x:menu#empresa-mobile"]
+  },
+  "vtex.menu@2.x:menu#empresa-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-itensmenu-footer"
+    },
+    "children": [
+      "menu-item#quem-somos",
+      "menu-item#Politica-privacidade",
+      "menu-item#Contato",
+      "menu-item#Formas-Pagamento",
+      "menu-item#envio-de-produtos",
+      "menu-item#trocas-e-devolucoes"
+    ]
+  },
+
+  "flex-layout.row#formas-de-pagto-mobile": {
+    "children": [
+      "rich-text#formas-pagamento-mobile",
+      "flex-layout.row#metodos-mobile",
+      "flex-layout.row#metodos2-mobile"
+    ],
+    "props": {
+      "blockClass": "container-footer-mobile"
+    }
+  },
+  "rich-text#formas-pagamento-mobile": {
+    "props": {
+      "text": "Formas de Pagamento",
+      "blockClass": "titulo-menus-footer-mobile"
+    }
+  },
+  "flex-layout.row#metodos-mobile": {
+    "children": [
+      "image#visa",
+      "image#master",
+      "image#boleto"
+    ],
+    "props": {
+      "blockClass": "metodos-mobile"
+    }
+  },
+  "image#visa": {
+    "props": {
+      "src": "assets/payment-3.svg",
+      "alt": "Bandeira Visa",
+      "blockClass": "visa-mobile"
+    }
+  },
+  "image#master": {
+    "props": {
+      "src": "assets/payment-4.svg",
+      "alt": "Bandeira Mastercard",
+      "blockClass": "master-mobile"
+    }
+  },
+  "image#boleto": {
+    "props": {
+      "src": "assets/payment-2.svg",
+      "alt": "Boleto bancário",
+      "blockClass": "boleto-mobile"
+    }
+  },
+  "flex-layout.row#metodos2-mobile": {
+    "children": [
+      "image#paymee-mobile"
+    ]
+  },
+
+  "image#paymee-mobile": {
+    "props": {
+      "src": "assets/payMee.webp",
+      "maxWidth": "320px",
+      "alt": "Pagamentos processados pela PayMee",
+      "link": {
+        "label": "PayMee",
+        "openNewTab": true,
+        "url": "https://www.paymee.com.br/"
+      },
+      "blockClass": "paymee-mobile"
+    }
+  },
+
+
+
+  "flex-layout.row#fique-conosco-mobile": {
+    "children": [
+      "rich-text#fique-conosco-mobile",
+      "flex-layout.row#redes-mobile"
+    ],
+    "props": {
+      "blockClass": "container-footer-mobile"
+    }
+  },
+  "rich-text#fique-conosco-mobile": {
+    "props": {
+      "text": "Fique conosco",
+      "blockClass": "titulo-menus-footer-mobile"
+    }
+  },
+  "flex-layout.row#redes-mobile": {
+    "children": [
+      "image#facebook-mobile",
+      "image#youtube-mobile",
+      "image#instagram-mobile"
+    ],
+    "props": {
+      "blockClass": "conteiner-footer-mobile-redes"
+    }
+  },
+  "image#facebook-mobile": {
+    "props": {
+      "src": "assets/facebook.png",
+      "alt": "ícone facebook",
+      "link": {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/idealineautoclaves",
+        "openNewTab": true
+      },
+      "blockClass": "redes-footer-mobile"
+    }
+  },
+  "image#instagram-mobile": {
+    "props": {
+      "src": "assets/instagram.png",
+      "alt": "ícone instagram",
+      "link": {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/idealine_autoclaves/",
+        "openNewTab": true
+      },
+      "blockClass": "redes-footer-mobile"
+    }
+  },
+  "image#youtube-mobile": {
+    "props": {
+      "src": "assets/youtube.png",
+      "alt": "ícone Youtube",
+      "link": {
+        "label": "Youtube",
+        "url": "https://www.youtube.com/channel/UCiA0juVQujppyBHeLgDMLXQ",
+        "openNewTab": true
+      },
+      "blockClass": "redes-footer-mobile"
+    }
+  },
+
+  "flex-layout.row#compre-com-seguranca-mobile": {
+    "children": [
+      "rich-text#compre-com-seguranca-mobile",
+      "flex-layout.row#imagens-compra-segura-mobile"
+    ],
+    "props": {
+      "blockClass": "container-footer-mobile"
+    }
+  },
+  "rich-text#compre-com-seguranca-mobile": {
+    "props": {
+      "text": "Compre com segurança",
+      "blockClass": "titulo-menus-footer-mobile"
+    }
+  },
+  "flex-layout.row#imagens-compra-segura-mobile":{
+    "children": [
+      "image#selosEncrypt-mobile",
+      "image#selosCertisign-mobile",
+      "image#vtex-mobile"
+    ],
+    "props": {
+      "blockClass": "conteiner-footer-mobile-redes"
+    }
+  },
+  "image#selosEncrypt-mobile":{
+    "props": {
+      "src": "assets/letsEncrypt.svg",
+      "alt": "Selo Let's Encrypt site seguro",
+      "link": {
+        "label": "Let's Encrypt",
+        "openNewTab": true,
+        "url": "https://letsencrypt.org/pt-br/"
+      },
+      "blockClass": "redes-footer-mobile"
+    }
+  },
+  "image#selosCertisign-mobile":{
+    "props": {
+      "src": "assets/selo_certisign.png",
+      "alt": "Selo Certisign site seguro",
+      "link": {
+        "label": "Certisign",
+        "openNewTab": true,
+        "url": "#"
+      },
+      "blockClass": "redes-footer-mobile"
+    }
+  },
+  "image#vtex-mobile":{
+    "props": {
+      "src": "assets/pngegg.png",
+      "maxWidth": "80px",
+      "alt": "Ícone VTEX",
+      "link": {
+        "label": "VTEX",
+        "openNewTab": true,
+        "url": "https://vtex.com/pt-br/"
+      },
+      "blockClass": "redes-footer-mobile"
+    }
+  }
+
+
+}

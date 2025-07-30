@@ -1,0 +1,121 @@
+{
+  "store.custom#contato": {
+    "blocks": [
+      "flex-layout.row#script_rd",
+      "sandbox#contato"
+      // "flex-layout.row#contato"
+    ]
+  },
+  "sandbox#contato":{
+    "props": {
+      "width": "900px",
+      "height": "60px",
+      "initialContent": "<div role='main' id='fale-conosco-5384d6a6fc9e49df7f77'></div><script type='text/javascript' src='https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js'></script><script type='text/javascript'> new RDStationForms('fale-conosco-5384d6a6fc9e49df7f77', 'null').createForm();</script>",
+      "allowCookies": true,
+      "allowStyles": true,
+      "allow-modals": true
+
+    }
+  },
+
+  // teste
+  // "flex-layout.row#contato": {
+  //   "props": {
+  //     "blockClass": "pagina-institucional"
+  //   },
+  //   "children": [
+  //     // "flex-layout.col#menu-institucionais-contato",
+  //     "flex-layout.col#contato"
+  //   ]
+  // },
+
+  // "flex-layout.col#contato": {
+  //   "props": {
+  //     "blockClass": "fale-conosco-campos"
+  //   },
+  //   "children": [
+  //     "rich-text#contato",
+  //     "form#contato"
+  //   ]
+  // },
+  "rich-text#contato": {
+    "props": {
+      "text": "## Fale Conosco"
+    }
+  },
+
+  "form#contato": {
+    "props": {
+      "entity": "CO",
+      "schema": "contact"
+    },
+    "blocks": [
+      "form-success#contato"
+    ],
+    "children": [
+      "form-input.text#nome",
+      "form-input.text#email",
+      "form-input.text#telefone",
+      "form-field-group#assunto",
+      "form-input.textarea#mensagem",
+      "form-submit#contact"  //botão submit
+    ]
+  },
+
+  "form-success#contato": {
+    "children": [
+      "rich-text#success-submit"
+    ]
+  },
+  "rich-text#success-submit": {
+    "props": {
+      "text": "Obrigado por entrar em contato, em breve retornaremos",
+      "blockClass": ""
+    }
+  },
+
+  "form-input.text#nome": {
+    "props": {
+      "pointer": "#/properties/nome",
+      "placeholder": "Seu nome",
+      "label": "Nome"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "Seu e-mail",
+      "label": "E-mail"
+    }
+  },
+  "form-input.text#telefone": {
+    "props": {
+      "pointer": "#/properties/telefone",
+      "placeholder": "Seu telefone",
+      "label": "Telefone"
+    }
+  },
+
+  "form-field-group#assunto": {
+    "props": {
+      "pointer": "#/properties/assunto",
+      "label": "Assunto"
+    }
+  },
+
+
+
+  "form-input.textarea#mensagem": {
+    "props": {
+      "pointer": "#/properties/mensagem",
+      "placeholder": "Sua mensagem",
+      "label": "Mensagem"
+    }
+  },
+
+  "form-submit#contact": {
+    "props": {
+      "label": "Enviar"
+    }
+  }
+}

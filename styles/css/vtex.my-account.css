@@ -1,0 +1,198 @@
+/* idealine paleta */
+
+.link-0-x-childrenContainer--link-baixar-manuais button{
+  border: none;
+}
+
+:root {
+  --rosa-da-rosa: #fc51a7;
+  --rosa-pink-escuro: #e90b91;
+  --pink: #ff3eb5;
+  --violeta: #fc87fc;
+  --mimi-pink: #ffd8f3;
+  --pale-purple: #ffebfb;
+  --preto-raisin: #2f2b2d;
+  --cinza-french: #bcb2ba;
+  --magnolia: #ede7eb;
+  --white: #fffefd;
+  --blush-lavanda: #fff3fd;
+  --sombra: #70809038;
+}
+
+
+
+.instagram-embed{
+  display: flex;
+  flex-direction: row;
+}
+
+:global(.vtex-store-components-3-x-container--texto-descricao) h1,
+:global(.vtex-store-components-3-x-container--texto-descricao) h2{
+  color: var(--pink);
+}
+
+:global(.vtex-textarea__label),
+:global(.vtex-input__label) {
+  /* padding: 10px; */
+  padding-top: 20px;
+  font-size: 1.1rem;
+}
+
+:global(.vtex-address-form__postalCode-forgottenURL) {
+  font-size: 1.1rem;
+}
+
+:global(.vtex-store-components-3-x-productDescriptionText) h2 {
+  text-align: left;
+}
+
+/* RESET */
+*,
+*:hover,
+*:focus {
+  /* transition:.5s ease all; */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+:focus {
+  outline: 0;
+}
+
+body,
+html {
+  touch-action: pan-y;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+:global(.vtex-spinner_circle) {
+  color: #251203;
+}
+
+:global(input):focus-visible {
+  outline: 0;
+}
+
+/* remove background do autocomplete chrome */
+input:-webkit-autofill {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
+/* ajusta bug de zoom nos inputs do iphone */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+  input[type="text"],
+  input[type="email"] {
+    font-size: 16px !important;
+  }
+}
+
+/* flexColChild--botao-de-comprar */
+/* botao hover PDP */
+:global(.vtex-flex-layout-0-x-flexColChild--coluna-buscar-cep) button {
+  background-color: var(--white);
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1px 1px 1px 1px;
+  width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--botao-de-comprar) button {
+  background-color: var(--pink);
+  position: relative;
+  overflow: hidden;
+  border: none;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* width: 300px; */
+}
+
+
+:global(.vtex-flex-layout-0-x-flexColChild--botao-de-comprar) button:hover {
+  transform: scale(1.02);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--coluna-buscar-cep) button:hover {
+  transform: scale(1.02);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--preto-raisin);
+
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--botao-de-comprar) button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  animation: shimmer 3s infinite;
+}
+
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* botão submit newletter */
+:global(.vtex-store-newsletter-1-x-formSubmitContainer) button {
+  background-color: #e90b91;
+}
+
+.container :global(.vtex-button__label) span {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+:global(.vtex-toast) {
+  background-color: var(--rosa-pink-escuro);
+}
+
+/*
+  :global(.vtex-menu-2-x-styledLinkContent){
+    color: #ede7eb;
+  } */
+
+
+/*
+  @media screen and (max-width: 1024px) {
+
+    } */
+
+
+:global(.vtex-numeric-stepper-container) {
+  display: flex;
+  justify-content: center;
+}
+
+
+.vflexColChild--black-friday-faq-listagem[aria-expanded="true"] .caretIcon {
+  transform: translateY(10px);
+  /* Move o ícone 10px para baixo */
+  transition: transform 0.3s ease-in-out;
+  /* Transição suave */
+}
+
+.emailInputContainer--inputs-form-roleta input {
+  color: #bcb2ba;
+}
+

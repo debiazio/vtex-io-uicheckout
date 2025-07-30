@@ -1,0 +1,73 @@
+/* vtex-add-to-cart-button-0-x-tooltipLabelText vtex-add-to-cart-button-0-x-tooltipLabelText--botao-comprar */
+
+
+.tooltipLabelText--botao-comprar{
+  color: black;
+}
+
+
+.buttonDataContainer--botao-icone-sacola {
+  background-image: url('assets/sacola.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+/* Efeito de aumentar ao passar o mouse */
+.buttonDataContainer--botao-icone-sacola:hover {
+  transform: scale(1.1); /* Aumenta 10% ao passar o mouse */
+}
+
+/* Retorna ao tamanho original suavemente ao tirar o mouse */
+.buttonDataContainer--botao-icone-sacola {
+  transition: transform 0.5s ease-out; /* Volta ao tamanho original de forma suave */
+}
+
+.buttonText--botao-icone-sacola{
+  display: none;
+}
+
+.buttonDataContainer--botao-icone-sacola {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Tooltip (texto) */
+.buttonDataContainer--botao-icone-sacola::after {
+  content: "Clique para adicionar à sacola";
+  position: absolute;
+  bottom: 22%;
+  left: -150%;
+  transform: translateX(-50%);
+  background-color: #ff3eb5;
+  color: white;
+  padding: 1px 5px;
+  border-radius: 5px;
+  font-size: 11px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  width: 100px;
+  text-transform: lowercase;
+}
+
+/* Exibe a tooltip ao passar o mouse */
+.buttonDataContainer--botao-icone-sacola:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .buttonDataContainer--botao-icone-sacola {
+    width: 35px;
+    height: 35px;
+    left: 0;
+  }
+}

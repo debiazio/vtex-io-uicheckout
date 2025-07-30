@@ -1,0 +1,221 @@
+.newsletterForm {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.nameInputContainer :global(.vtex-input-prefix__group),
+.emailInputContainer :global(.vtex-input-prefix__group) {
+  height: auto;
+  border: 0;
+}
+
+.nameInputContainer :global(.vtex-styleguide-9-x-input),
+.emailInputContainer :global(.vtex-styleguide-9-x-input) {
+  padding: 10px 15px 10px;
+  background: transparent;
+  border: 1px solid #ffff;
+  border-radius: 10px;
+}
+
+.nameInputContainer :global(.vtex-styleguide-9-x-input)::placeholder,
+.emailInputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: #9a9a9b;
+}
+
+.nameInputContainer--newsletter-footer :global(.vtex-styleguide-9-x-input)::placeholder,
+.emailInputContainer--newsletter-footer :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: white;
+  width: 100px;
+}
+
+.defaultErrorMessage,
+.defaultSuccessMessage,
+.newsletterForm :global(.vtex-input__error) {
+  text-align: center;
+  padding-left: 5px;
+  background-color: transparent;
+}
+
+.confirmationCheckboxContainer--termo-concordo-roleta :global(.vtex-checkbox__line-container) {
+  display: flex;
+  text-align: left;
+}
+
+
+/* form -roleta */
+.newsletterForm--formulario-roleta {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+  gap: 50px
+}
+
+
+
+.nameInputContainer,
+.emailInputContainer,
+.phoneInputContainer {
+  width: 446px;
+  color: white;
+  margin-bottom: 7px;
+}
+
+.nameInputContainer :global(.vtex-input__label),
+.emailInputContainer :global(.vtex-input__label),
+.phoneInputContainer :global(.vtex-input__label) {
+  color: lightgray;
+}
+
+
+/* .phoneInputContainer--inputs-form-roleta :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: white;
+  color: gray !important;
+} */
+
+.phoneInputContainer--inputs-form-roleta :global(.vtex-input__label) {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.emailInputContainer--inputs-form-roleta :global(.vtex-input-prefix__group) {
+  color: black;
+}
+
+
+
+.defaultSuccessMessage--formulario-roleta {
+  width: 100%;
+}
+
+.confirmationCheckboxContainer--termo-concordo-roleta {
+  width: 100%;
+}
+
+.confirmationCheckboxContainer--termo-concordo-roleta :global(.vtex-checkbox__label) {
+  color: #ffff;
+  font-size: 14px;
+}
+
+.confirmationCheckboxContainer--aceito-termos :global(.vtex-checkbox__label) {
+  text-decoration: underline;
+  color: #ffff;
+  font-size: 14px;
+}
+
+
+
+
+.formSubmitContainer--submit-button {
+  border: none;
+  padding-top: 5px;
+}
+
+.formSubmitContainer--submit-button :global(.vtex-button) {
+  border: none;
+  background-color: #e90b91;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(233, 11, 145, 0.8);
+  /* Luz simples por trás */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.formSubmitContainer--submit-button :global(.vtex-button):hover {
+  box-shadow: 0 0 40px rgba(233, 11, 145, 1);
+  /* Intensifica a luz no hover */
+}
+
+
+.phoneInputContainer--inputs-form-roleta {
+  background-color: #ffff;
+}
+
+.emailInputContainer--inputs-form-roleta {
+  background-color: #ffff;
+}
+
+.nameInputContainer--inputs-form-roleta {
+  background-color: #ffff;
+}
+
+/* email error */
+.phoneInputContainer--inputs-form-roleta :global(.vtex-input__error),
+.nameInputContainer--inputs-form-roleta :global(.vtex-input__error),
+.emailInputContainer--inputs-form-roleta :global(.vtex-input__error) {
+  background-color: black;
+  margin: 0;
+  padding: 10px 0px 0 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .nameInputContainer--newsletter-footer,
+  .emailInputContainer--newsletter-footer{
+    width: unset;
+  }
+
+  .confirmationCheckboxContainer--termo-concordo-roleta :global(.vtex-checkbox__line-container) {
+    margin-bottom: 5px;
+  }
+
+  .confirmationCheckboxContainer--aceito-termos :global(.vtex-checkbox__label) {
+    text-decoration: underline;
+    color: #ffff;
+    font-size: 10px;
+    margin-top: 3px;
+  }
+
+  .phoneInputContainer--inputs-form-roleta,
+  .emailInputContainer--inputs-form-roleta,
+  .nameInputContainer--inputs-form-roleta {
+    width: 250px;
+    margin: 5px;
+  }
+
+  .confirmationCheckboxContainer--termo-concordo-roleta :global(.vtex-checkbox__label) {
+    font-size: 10px;
+  }
+
+  .newsletterForm {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+  }
+
+  .newsletterForm--newsletter-footer{
+    margin-left: 0;
+  }
+
+  .confirmationCheckboxContainer--termo-concordo-roleta {
+    width: 70%;
+    padding-left: 0;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .formSubmitContainer--submit-button {
+    border: none;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .newsletterForm {
+    margin-top: 285px;
+  }
+
+  .phoneInputContainer--inputs-form-roleta,
+  .emailInputContainer--inputs-form-roleta,
+  .nameInputContainer--inputs-form-roleta {
+    width: 100%;
+  }
+}

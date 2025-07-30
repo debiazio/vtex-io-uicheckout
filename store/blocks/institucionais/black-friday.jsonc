@@ -1,0 +1,587 @@
+{
+  "store.custom#black-friday": {
+
+    "blocks": [
+      "flex-layout.row#black-friday-principal"
+    ]
+  },
+  "flex-layout.row#black-friday-principal": {
+    "props": {
+      "blockClass": "black-friday-coluna",
+      "fullWidth": true
+    },
+    "children": [
+
+      "flex-layout.col#black-friday-geral"
+
+    ]
+  },
+  "flex-layout.col#black-friday-geral": {
+    "props": {
+      "blockClass": "bf-coluna-secundaria"
+    },
+    "children": [
+      "flex-layout.col#black-friday-container-titulo",
+      "flex-layout.col#black-friday-faq",
+      "flex-layout.col#black-friday-inscricao"
+    ]
+  },
+
+  // CONTAINER PRIMEIRA LINHA -TITULO
+  "flex-layout.col#black-friday-container-titulo": {
+    "props": {
+      "blockClass": "black-friday-container-titulo",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#black-friday-titulo",
+      "flex-layout.col#black-friday-sub-titulo"
+    ]
+  },
+  "flex-layout.col#black-friday-titulo": {
+    "props": {
+      "blockClass": "black-friday-titulo"
+    },
+    "children": [
+      "rich-text#black-friday-titulo"
+    ]
+  },
+  "rich-text#black-friday-titulo": {
+    "props": {
+      "blockClass": "titulo-bf-head",
+      "text": "# BLACK FRIDAY 2024"
+    }
+  },
+  "flex-layout.col#black-friday-sub-titulo": {
+    "props": {
+      "blockClass": "black-friday-subtitulo"
+    },
+    "children": [
+      "rich-text#black-friday-subtitulo"
+    ]
+  },
+  "rich-text#black-friday-subtitulo": {
+    "props": {
+      "blockClass": "subtitulo-bf",
+      "text": "A partir do dia 4 a 30 de novembro começam as melhores promoções.\nNão fique de fora!\nTrouxemos condições especiais ! Aproveite o **MENOR PREÇO DO ANO** em **TODOS** os produtos do site, com parcelamento em até **10x SEM JUROS**.\nE tem mais: nas compras de autoclaves de 5 ou 8 litros , você ganha três brindes, haste, separador e copo medidor Idealovers para completar seu kit.\nAlém disso, participe da nossa **ROLETA DE PRÊMIOS** exclusiva e concorra a descontos e brindes especiais durante todo o período da Black Friday Idealine.\nGaranta já sua autoclave com menor preço com a líder de mercado.\nEleve seus serviços a um novo patamar oferecendo saúde e segurança aos seus clientes.\nCadastre já para receber tudo antecipadamente."
+    }
+  },
+  // CONTAINER AREA DAS FAQS - SECAO PRINCIPAL
+  "flex-layout.col#black-friday-faq": {
+    "props": {
+      "blockClass": "black-friday-conteudo-principal"
+    },
+    "children": [
+      "flex-layout.col#black-friday-faq-titulo",
+      "flex-layout.col#black-friday-faq-listagem"
+    ]
+
+  },
+  "flex-layout.col#black-friday-faq-titulo": {
+    "props": {
+      "blockClass": "titulo-subtitulo-blackfriday"
+    },
+    "children": [
+      "rich-text#black-friday-faq-titulo"
+    ]
+  },
+  "rich-text#black-friday-faq-titulo": {
+    "props": {
+      "blockClass": "subtitulo-bf-faq",
+      "text": "### OPORTUNIDADES IMPERDÍVEIS NA BLACK IDEAL EM NOVEMBRO"
+    }
+  },
+
+  // SECAO FAQ - DISCLOSURE
+  "flex-layout.col#black-friday-faq-listagem": {
+    "props": {
+      "blockClass": "black-friday-faq-listagem"
+    },
+    "children": [
+      "disclosure-layout#black-friday-quando",
+      "disclosure-layout#black-friday-prazo",
+      "disclosure-layout#black-friday-formas-pgto",
+      "disclosure-layout#black-friday-pol-trocas",
+      "disclosure-layout#black-friday-seguro",
+      "disclosure-layout#black-friday-produtos-promo",
+      "disclosure-layout#black-friday-como-aproveitar"
+    ]
+  },
+  // QUANDO VAI COMEÇAR A BLACK FRIDAY?
+  "disclosure-layout#black-friday-quando": {
+    "children": [
+      "disclosure-trigger#quando-pergunta",
+      "disclosure-content#quando-resposta"
+    ]
+  },
+  "disclosure-trigger#quando-pergunta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#quando-pergunta",
+      "disclosure-state-indicator#quando"
+    ]
+  },
+
+
+
+  "rich-text#quando-pergunta": {
+    "props": {
+      "text": "Quando acontece a Black Friday da Idealine em 2024?",
+      "blockClass": "texto-disclosure"
+    }
+  },
+  "disclosure-content#quando-resposta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#quando-resposta"
+    ]
+  },
+  "rich-text#quando-resposta": {
+    "props": {
+      "text": "A black friday do site da Idealine irá começar dia 4 de novembro e todos as ações e preços seguirão vigente durante o mês.",
+      "blockClass": "texto-disclosure-resposta"
+    }
+  },
+  // Qual o prazo de entrega dos produtos da Idealine na Black Friday de 2024?
+  "disclosure-layout#black-friday-prazo": {
+    "children": [
+      "disclosure-trigger#prazo-pergunta",
+      "disclosure-content#prazo-resposta"
+    ]
+  },
+  "disclosure-trigger#prazo-pergunta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#prazo-pergunta",
+      "disclosure-state-indicator#prazo"
+    ]
+  },
+  "rich-text#prazo-pergunta": {
+    "props": {
+      "text": "Qual o prazo de entrega dos produtos da Idealine na Black Friday de 2024?",
+      "blockClass": "texto-disclosure"
+    }
+  },
+  "disclosure-content#prazo-resposta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#prazo-resposta"
+    ]
+  },
+  "rich-text#prazo-resposta": {
+    "props": {
+      "text": "Para essa ação disponibilizaremos um lote especial para pronta entrega.\nSomos fabricantes do produto e teremos todos os modelos de autoclave Idealine a pronta entrega, disponíveis no site a partir do dia 1º de novembro na black Ideal.\nEntregas:\nVariam de acordo com a localidade , região, e forma de envio selecionada no momento da compra ( PAC, SEDEX ou transportadora).\n**Favor atentar ao prazo estimulado pela transportadora no ato da compra.**",
+      "blockClass": "texto-disclosure-resposta"
+    }
+  },
+  // Quais as formas de pagamentos aceitas no site da Idealine?
+  "disclosure-layout#black-friday-formas-pgto": {
+    "children": [
+      "disclosure-trigger#formas-pgto-pergunta",
+      "disclosure-content#formas-pgto-resposta"
+    ]
+  },
+  "disclosure-trigger#formas-pgto-pergunta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#formas-pgto-pergunta",
+      "disclosure-state-indicator#pgto"
+    ]
+  },
+  "rich-text#formas-pgto-pergunta": {
+    "props": {
+      "text": "Quais as formas de pagamentos aceitas no site da Idealine?",
+      "blockClass": "texto-disclosure"
+    }
+  },
+  "disclosure-content#formas-pgto-resposta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#formas-pgto-resposta"
+    ]
+  },
+  "rich-text#formas-pgto-resposta": {
+    "props": {
+      "text": "**Oferecemos as melhores condições para você conseguir conquistar seu sonho de ter uma autoclave da Idealine. **Aceitamos os seguintes cartões de crédito:\nAmex,  Dinners Club, Visa, MasterCard, Elo e Hipercard.\nTambém aceitamos pagamentos via PayMee, boleto bancário e Pix. Fazemos o parcelamento em até 10x sem juros.\nCaso não tenha crédito no seu cartão também temos o boleto KOIN parcelado sujeito a análise da operadora. Caso precise pagar em cartões diferentes ou dar um sinal de entrada converse com nossas consultoras que elas facilitarão a compra para você!\n**A Idealine não solicita dados de cartão , os pagamentos são feitos através de links direto na operadora.**",
+      "blockClass": "texto-disclosure-resposta"
+    }
+  },
+  // POLITICA DE TROCAS - BLACK FRIDAY
+  "disclosure-layout#black-friday-pol-trocas": {
+    "children": [
+      "disclosure-trigger#pol-trocas-pergunta",
+      "disclosure-content#pol-trocas-resposta"
+    ]
+  },
+  "disclosure-trigger#pol-trocas-pergunta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#pol-trocas-pergunta",
+      "disclosure-state-indicator#trocas"
+    ]
+  },
+  "rich-text#pol-trocas-pergunta": {
+    "props": {
+      "text": "Como funciona a política de trocas na Black Friday de 2024?",
+      "blockClass": "texto-disclosure"
+    }
+  },
+  "disclosure-content#pol-trocas-resposta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#pol-trocas-resposta"
+    ]
+  },
+  "rich-text#pol-trocas-resposta": {
+    "props": {
+      "text": "Caso necessite realizar a  troca do produto, a solicitação deve ser feita em até 7 dias\n corridos a partir da data de recebimento do produto,  através do telefone\n**0800 721 8534**.\nApós este prazo, o contato deve ser feito diretamente com o nosso SAC ou com a sua rede de Assistência Técnica Autorizada, disponível no site do fabricante Stermax.\nPara mais informações sobre política de trocas e devoluções, recomendamos que acesse essa [página](https://www.idealine.com.br/institucional/trocas-e-devolucoes).",
+      "blockClass": "texto-disclosure-resposta"
+    }
+  },
+  // É SEGURO COMPRAR - BLACK FRIDAY
+  "disclosure-layout#black-friday-seguro": {
+    "children": [
+      "disclosure-trigger#seguro-pergunta",
+      "disclosure-content#seguro-resposta"
+    ]
+  },
+  "disclosure-trigger#seguro-pergunta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#seguro-pergunta",
+      "disclosure-state-indicator#seguro"
+    ]
+  },
+  "rich-text#seguro-pergunta": {
+    "props": {
+      "text": "É seguro comprar no site da Idealine?",
+      "blockClass": "texto-disclosure"
+    }
+  },
+  "disclosure-content#seguro-resposta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#seguro-resposta"
+    ]
+  },
+  "rich-text#seguro-resposta": {
+    "props": {
+      "text": "Somos o único canal oficial da fábrica.  Nosso site existe há mais de 20 anos  e a fábrica Stermax tem mais de 30  anos no mercado.\nAqui cada compra realizada sai direto da fábrica Stermax para sua casa, tornando a operação segura e mais eficiente. Nosso site da Idealine utiliza medidas rigorosas de segurança para proteger as informações pessoais e financeiras dos clientes que acessam o site, além de políticas protetivas, cuidamos de todos os dados da nossas clientes.\nAlém disso, usamos métodos de pagamentos confiáveis e seguros como cartão de crédito, boleto bancário e pix. Podem confiar na líder de mercado.",
+      "blockClass": "texto-disclosure-resposta"
+    }
+  },
+  // QUAIS PRODUTOS VAO ENTRAR EM PROMO - BLACK FRIDAY
+  "disclosure-layout#black-friday-produtos-promo": {
+    "children": [
+      "disclosure-trigger#produtos-promo-pergunta",
+      "disclosure-content#produtos-promo-resposta"
+    ]
+  },
+  "disclosure-trigger#produtos-promo-pergunta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#produtos-promo-pergunta",
+      "disclosure-state-indicator#promocao"
+    ]
+  },
+  "rich-text#produtos-promo-pergunta": {
+    "props": {
+      "text": "Quais produtos vão entrar em promoção na Black Friday da Idealine?",
+      "blockClass": "texto-disclosure"
+    }
+  },
+  "disclosure-content#produtos-promo-resposta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#produtos-promo-resposta"
+    ]
+  },
+  "rich-text#produtos-promo-resposta": {
+    "props": {
+      "text": "A black Friday Ideal terá oportunidades e descontos em todas os produtos do site.",
+      "blockClass": "texto-disclosure-resposta"
+    }
+  },
+  // COMO APROVEITAR - BLACK FRIDAY
+  "disclosure-layout#black-friday-como-aproveitar": {
+    "children": [
+      "disclosure-trigger#como-aproveitar-pergunta",
+      "disclosure-content#como-aproveitar-resposta"
+    ]
+  },
+  "disclosure-trigger#como-aproveitar-pergunta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#como-aproveitar-pergunta",
+      "disclosure-state-indicator#aproveitar"
+    ]
+  },
+  "rich-text#como-aproveitar-pergunta": {
+    "props": {
+      "text": "Como posso aproveitar a Black Friday da Idealine?",
+      "blockClass": "texto-disclosure"
+    }
+  },
+  "disclosure-content#como-aproveitar-resposta": {
+    "props": {
+      "blockClass": "disclosure-blackfriday"
+    },
+    "children": [
+      "rich-text#como-aproveitar-resposta"
+    ]
+  },
+  "rich-text#como-aproveitar-resposta": {
+    "props": {
+      "text": "Se você não quiser ficar de fora das promoções e novidades que a Idealine irá trazer na Black Friday 2024, se cadastre no formulário abaixo e receba as nossas ofertas exclusivas com antecedência, dessa forma você garante sua compra com tranquilidade e a segurança que merece.\nNão fique de fora, cadastre-se já!",
+      "blockClass": "texto-disclosure-resposta"
+    }
+  },
+
+  // SEÇÃO INSCREVA-SE
+  "flex-layout.col#black-friday-inscricao": {
+    "props": {
+      "blockClass": "conteiner-newsletter"
+    },
+    "children": [
+      "flex-layout.col#blackfriday-inscricao"
+    ]
+  },
+  "flex-layout.col#blackfriday-inscricao": {
+    "props": {
+      "blockClass": "coluna-newsletter"
+    },
+    "children": [
+      "flex-layout.row#conteiner-black-friday-titulo-newsletter",
+      "form#black-friday"
+    ]
+  },
+  "form#black-friday": {
+    "props": {
+      "entity": "blackfriday",
+      "schema": "blackfriday",
+      "blockClass": "formulario-bf"
+    },
+    "blocks": [
+      "form-success#blackfriday"
+    ],
+    "children": [
+      "flex-layout.row#primeira-linha-bf-newsletter",
+      "flex-layout.row#segunda-linha-bf-newsletter",
+
+      // "form-input.checkbox#bfQualproduto",
+      "form-submit#blackfriday"
+
+    ]
+  },
+  "form-success#blackfriday": {
+    "children": [
+      "rich-text#sucess-submit-bf"
+    ]
+  },
+  "rich-text#sucess-submit-bf": {
+    "props": {
+      "text": "Obrigado"
+    }
+  },
+
+  "flex-layout.row#primeira-linha-bf-newsletter": {
+    "props": {
+      "blockClass": "primeira-linha-vf-newsletter"
+    },
+    "children": [
+      "flex-layout.row#campos-bfnome",
+      "flex-layout.row#bfDatanasc"
+    ]
+  },
+  "flex-layout.row#campos-bfnome": {
+    "props": {
+      "blockClass": "campos-nome"
+    },
+    "children": [
+      "form-input.text#bfNome"
+    ]
+  },
+  "form-input.text#bfNome": {
+    "props": {
+      "pointer": "#/properties/bfNome",
+      "placeholder": "Seu nome",
+      "label": "Nome"
+    }
+  },
+  "flex-layout.row#bfDatanasc": {
+    "props": {
+      "blockClass": "bf-datanasc"
+    },
+    "children": ["form-input.text#bfDatanasc"]
+  },
+  "form-input.text#bfDatanasc": {
+    "props": {
+      "pointer": "#/properties/bfDatanasc",
+      "placeholder": "Sua data de nascimento",
+      "label": "Data de nascimento"
+    }
+  },
+  "flex-layout.row#segunda-linha-bf-newsletter":{
+    "props": {
+      "blockClass": "segunda-linha-bf"
+    },
+    "children": [
+      "flex-layout.row#bfEmail",
+      "flex-layout.row#bfTelefone",
+      "flex-layout.row#bfCpf"
+    ]
+  },
+  "flex-layout.row#bfEmail": {
+    "props": {
+      "blockClass": "bf-email"
+    },
+    "children": ["form-input.text#bfEmail"]
+  },
+  "form-input.text#bfEmail": {
+    "props": {
+      "pointer": "#/properties/bfEmail",
+      "placeholder": "Seu e-mail",
+      "label": "E-mail"
+    }
+  },
+  "flex-layout.row#bfTelefone": {
+    "props": {
+      "blockClass": "bf-telefone"
+    },
+    "children": ["form-input.text#bfTelefone"]
+  },
+  "form-input.text#bfTelefone": {
+    "props": {
+      "pointer": "#/properties/bfTelefone",
+      "placeholder": "Seu telefone",
+      "label": "Telefone/Celular"
+    }
+  },
+  "flex-layout.row#bfCpf": {
+    "props": {
+      "blockClass": "bf-cpf"
+    },
+    "children": ["form-input.text#bfCpf"]
+  },
+  "form-input.text#bfCpf": {
+    "props": {
+      "pointer": "#/properties/bfCpf",
+      "placeholder": "Seu CPF",
+      "label": "CPF"
+    }
+  },
+  "form-input.checkbox#bfQualproduto": {
+    "props": {
+      "pointer": "#/properties/bfQualproduto",
+      "placeholder": "Produto",
+      "label": "teste",
+      "uiSchema": "checkbox"
+    }
+  },
+
+  "flex-layout.row#conteiner-black-friday-titulo-newsletter": {
+    "props": {
+      "blockClass": "black-friday-container-titulo-newsletter"
+    },
+    "children": [
+      "rich-text#balck-fridaytitulo-newsletter"
+    ]
+  },
+  "rich-text#balck-fridaytitulo-newsletter": {
+    "props": {
+      "blockClass": "titulo-newsletter-bf",
+      "text": "Não perca as promoções e novidade da Idealine na Black Friday 2024!"
+    }
+  },
+  "flex-layout.row#conteiner-black-friday-campos-newsletter": {
+    "props": {
+      "blockClass": "container-black-friday-campos-newsletter"
+    },
+    "children": [
+      "newsletter-form#black-friday"
+
+    ]
+  },
+  "newsletter-form#black-friday": {
+    "props": {
+      "blockClass": "linha1-container-newsletter-black-friday"
+    },
+    "children": [
+      "newsletter-input-name#black-friday",
+      "newsletter-input-email#black-friday"
+    ]
+  },
+
+  "newsletter-input-name#black-friday": {
+    "props": {
+      "placeholderText": "Nome"
+    }
+  },
+  "newsletter-input-email#black-friday": {
+    "props": {
+      "placeholderText": "E-mail"
+    }
+  },
+  "form-submit#blackfriday": {
+    "props": {
+      "label": "Enviar"
+    }
+  },
+
+  // "flex-layout.row#conteiner-black-friday-checkboxes-newsletter": {
+  //   "props": {
+  //     "blockClass": "container-black-friday-checkboxes"
+  //   },
+  //   "children": [
+  //     "flex-layout.row#black-friday-titulo-checkboxes",
+  //     "flex-layout.row#black-friday-checkboxes"
+  //   ]
+  // },
+  // "flex-layout.row#black-friday-titulo-checkboxes": {
+  //   "props": {
+  //     "blockClass": "container-titulo-checkboxes-black-friday"
+  //   },
+  //   "children": [
+  //     "rich-text#titulo-checkboxes"
+  //   ]
+  // },
+  "rich-text#titulo-checkboxes": {
+    "props": {
+      "blockClass": "titulo-checkbox-black-friday",
+      "text": "Qual produto produta?"
+    }
+  },
+  "flex-layout.row#black-friday-checkboxes": {
+
+  }
+
+
+
+
+}

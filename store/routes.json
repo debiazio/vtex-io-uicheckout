@@ -1,0 +1,32 @@
+{
+  "store.custom#quem-somos": {
+    "path": "/institucional/quem-somos"
+  },
+  "store.custom#politica-privacidade": {
+    "path": "/institucional/politica-privacidade"
+  },
+  "store.custom#faq": {
+    "path": "/faq"
+  },
+  "store.custom#contato": {
+    "path": "/institucional/fale-conosco"
+  },
+  "store.custom#formas-pagamento": {
+    "path": "/institucional/formas-pagamento"
+  },
+  "store.custom#envio-de-produtos": {
+    "path": "/institucional/envio-de-produtos"
+  },
+  "store.custom#trocas-e-devolucoes": {
+    "path": "/institucional/trocas-e-devolucoes"
+  },
+  "store.custom#black-friday": {
+    "path": "/black-friday-faq"
+  },
+  "store.custom#manuais": {
+    "path": "/ajuda/manuais-idealine"
+  },
+  "store.custom#template-categoria": {
+    "path": "/template"
+  }
+}

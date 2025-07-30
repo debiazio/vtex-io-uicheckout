@@ -1,0 +1,49 @@
+:global(.vtex-wish-list-1-x-wishlistIconContainer) {
+    z-index: 1;
+
+}
+
+/* .wishlistIconContainer {
+    display: flex;
+    flex-direction: row-reverse;
+} */
+
+
+
+.wishlistIconContainer :global(.vtex-button) {
+    border: 0;
+    background: transparent;
+    min-height: auto;
+    z-index: 2;
+    transition: all 0.5s ease;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 82%;
+}
+
+.wishlistIconContainer :global(.vtex-button):hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+
+.wishlistIconContainer :global(.vtex-button__label) {
+    padding: 0 !important;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    .wishlistIconContainer--wishlist-shelf {
+        position: absolute;
+        right: 0;
+        bottom: -70px;
+        z-index: 1;
+        text-align: right;
+    }
+
+    .wishlistIconContainer :global(.vtex-button) {
+        margin-top: 10%;
+        margin-left: 76%;
+    }
+
+}

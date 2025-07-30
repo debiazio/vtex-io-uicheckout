@@ -1,0 +1,20 @@
+.productHighlightWrapper--collection {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 200px;
+}
+
+.productHighlightText {
+  background: var(--rosa-da-rosa);
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: white;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .productHighlightText{
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,40 @@
+.flexRow--productSpecificationGroup:not(:first-child) {
+  margin-top: 1.5rem;
+  font-size: smaller;
+}
+
+/* .flexRow--productSpecificationGroupName {
+  background-color: #eaeaea;
+  padding: 0.5rem 1rem;
+} */
+
+.flexRowContent--productSpecificationGroup{
+  border: 1px groove #ede7eb;
+  margin-top: 20px;
+  border-top: 10px solid var(--pink);
+  margin: 20px;
+  width: auto;
+  padding: 20px;
+}
+
+.flexCol--productSpecificationName {
+  padding: 1rem;
+}
+
+.flexCol--productSpecificationValue {
+  padding: .7rem .7rem .7rem 0;
+}
+
+/* .flexRow--productSpecification:nth-child(even) {
+  background-color: #f9f9f9;
+} */
+
+:global(.vtex-product-specifications-1-x-groupName){
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.flexRowContent--descricao{
+  margin-bottom: 0;
+}

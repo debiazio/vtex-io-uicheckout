@@ -1,0 +1,29 @@
+:global(.vtex-store-drawer-0-x-opened) {
+    width: min-content;
+    height: min-content;
+    background-color: transparent;
+}
+:global(.vtex-store-drawer-0-x-childrenContainer) {
+    width: 100%;
+}
+:global(.vtex-store-drawer-0-x-drawerContent) {
+    background-color: #ffebfb;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: min-content;
+}
+
+:global(.vtex-store-drawer-20-x-drawer) {
+    /* max-width: 60px; */
+    width: 100%;
+}
+
+
+.closeIconContainer{
+  /* background-color: #e90b91; */
+  border-bottom: none;
+  background: var(--rosa-pink-escuro);
+}
+/* vtex-store-drawer-20-x-drawer vtex-store-drawer-0-x-opened  left-0 fixed top-0 bottom-0 bg-base z-999 flex flex-column */
+
+/* vtex-store-drawer-0-x-opened */

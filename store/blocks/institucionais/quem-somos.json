@@ -1,0 +1,119 @@
+{
+  "store.custom#quem-somos": {
+    "blocks": [
+      "flex-layout.row#script_rd",
+      "flex-layout.row#quem-somos"]
+  },
+  "flex-layout.row#quem-somos": {
+    "props": {
+      "blockClass": "pagina-institucional"
+    },
+    "children": [
+      "flex-layout.col#menu-institucionais-quem-somos",
+      "flex-layout.col#conteudo-quem-somos"
+    ],
+    "title": "Página Envio de Produtos"
+  },
+  "flex-layout.col#menu-institucionais-quem-somos": {
+    "props": {
+      "width": "22%",
+      "blockClass": "menu-institucionais"
+    },
+    "children": [
+      "rich-text#titulo-menu-institucionais",
+      "flex-layout.row#institucionais-quem-somos-active",
+      "link#institucionais-politica-privacidade",
+      "link#institucionais-formas-pgto",
+      "link#institucionais-envio",
+      "link#institucionais-trocas-e-devolucoes"
+    ],
+    "title": "Menu institucionais - Página Quem Somos"
+  },
+
+  "flex-layout.row#institucionais-quem-somos-active": {
+    "props": {
+      "blockClass": "menu-institucionais-active"
+    },
+    "children": [
+      "flex-layout.col#titulo-quem-somos-active",
+      "flex-layout.col#institucional-icon-active"
+    ]
+  },
+  "flex-layout.col#titulo-quem-somos-active": {
+    "props": {
+      "blockClass": "col-titulo-inst"
+    },
+    "children": [
+      "rich-text#titulo-item-menu-quem-somos-active"
+    ]
+  },
+  "rich-text#titulo-item-menu-quem-somos-active": {
+    "props": {
+      "text": "[Quem Somos](/institucional/quem-somos)",
+      "blockClass": "item-menu-institucionais-active"
+    }
+  },
+  "flex-layout.col#institucional-icon-active": {
+    "props": {
+      "blockClass": "col-icon-inst"
+    },
+    "children": [
+      "image#icon-menu-institucionais-active"
+    ]
+  },
+  "image#icon-menu-institucionais-active": {
+    "props": {
+      "blockClass": "icone-institucionais-active",
+      "src": "assets/seta-para-direita.svg",
+      "alt": "Ícone seta para direita"
+    }
+  },
+
+  "flex-layout.col#conteudo-quem-somos": {
+    "children": [
+      "rich-text#titulo-quem-somos",
+      "rich-text#texto-quem-somos",
+      "rich-text#texto-quem-somos2"
+    ],
+    "props": {
+      "width": "78%",
+      "blockClass": "conteudo-institucionais"
+    },
+    "title": "Conteúdo Quem somos"
+  },
+
+  "rich-text#titulo-quem-somos": {
+    "props": {
+      "text": "## Quem Somos",
+      "blockClass": "titulo-institucionais"
+    },
+    "title": "Titulo - Quem somos"
+  },
+  "rich-text#texto-quem-somos":{
+    "props": {
+      "blockClass": "conteudo-institucionais",
+      "text": "_Idealine, a verdadeira líder no mercado de biossegurança._\n\nDesde a nossa fundação em 2004, a Idealine se dedica a fornecer soluções de esterilização que têm a segurança e a eficiência como prioridades.\nSomos o ecommerce oficial da fábrica Stermax e criamos a Idealine para **conectar a fábrica** direto ao **consumidor** final, nossa fábrica possui mais de 30 anos dedicados à biossegurança, trabalhando com tecnologia de ponta para garantir a máxima proteção para o profissional e seus clientes.\nCom mais de **250 mil autoclaves vendidas**, confirmamos nossa posição como a verdadeira líder no mercado de biossegurança.\nTodas as nossas autoclaves possuem registro na ANVISA e certificação ISO 13485/2016, garantindo um padrão de qualidade internacionalmente reconhecido para dispositivos médicos, assegurando a consistência e confiabilidade dos produtos Stermax.\nNossas autoclaves trabalham por ciclos de esterilização através de vapor aquecido e sob pressão. **Esse é o único método de esterilização validado pela ANVISA**.\n"
+    }
+  },
+  "rich-text#texto-quem-somos2":{
+    "props": {
+      "blockClass": "conteudo-institucionais",
+      "text": "**STERMAX A FÁBRICA DA IDEALINE**\n**NOSSAS VANTAGENS**\n * Todos os produtos possuem **Registro ANVISA**\n * Fabricante certificado pela **ISO 13485:2016**\n * Loja oficial da fábrica\n * **Mais de 30 anos de mercado**\n * A **marca mais vendida**\n * Produtos **com garantia**\n * Maior rede de **assistência técnica** do Brasil"
+    }
+  },
+  "flex-layout.col#imagem-quem-somos": {
+    "props": {
+      "blockClass": "container-imagem-quem-somos"
+    },
+    "children": [
+      "image#quem-somos"
+    ]
+  },
+  "image#quem-somos": {
+    "props": {
+      "blockClass": "imagem-quem-somos",
+      "src": "assets/Esquema_timeline.webp",
+      "alt": "Imagem timeline Idealine"
+    }
+  }
+}

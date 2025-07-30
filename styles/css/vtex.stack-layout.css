@@ -1,0 +1,38 @@
+.stackItem--product {
+  width: 100%;
+  min-height: 257px
+}
+
+.stackItem--quickview {
+  right: 0;
+  top: 0;
+  left: auto;
+}
+
+
+.stackContainer--product-image {
+  margin: 20px;
+}
+
+.stackItem--sacola-icone {
+  top: 74%;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.stackItem--sacola-icone {
+  position: absolute;
+}
+
+@media screen and (max-width: 1024px) {
+  .stackItem--sacola-icone {
+    top: 63%;
+    bottom: 0;
+    left: 13px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

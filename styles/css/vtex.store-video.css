@@ -1,0 +1,47 @@
+.videoContainer {
+  width: 100%;
+  height: 100%;
+  margin-top: 2%;
+}
+
+.videoElement--video-instagram{
+  margin-top: -3px;
+
+  transition: all 0.5s ease;
+}
+
+.videoElement--video-instagram:hover{
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
+
+@media only screen and (min-width: 640px) {
+  .videoContainer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .videoContainer--video75litrosVertical {
+    width: 100%!important;
+    height: 100%;
+    padding: 20px!important;
+  }
+}
+
+.videoContainer,
+.videoContainer--videoexemplo {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.videoElement--videoexemplo {
+  border: none;
+}
+
+.fallbackImage--videoexemplo,
+.fallbackContainer--videoexemplo {
+  border: none;
+}

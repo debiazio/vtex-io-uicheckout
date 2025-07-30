@@ -1,0 +1,38 @@
+.expandIcon {
+  color: #727273;
+}
+
+.caretIcon {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  margin-top: 75px;
+}
+
+.caretIcon--cima{
+  margin-top: 162px;
+}
+
+.caretIcon--cima-prazo{
+  margin-top: 309px;
+}
+
+.caretIcon--cima-pgto{
+  margin-top: 399px;
+}
+.caretIcon--cima-trocas{
+  margin-top: 311px;
+}
+.caretIcon--cima-seguro{
+  margin-top: 370px;
+}
+.caretIcon--cima-promocao{
+  margin-top: 129px;
+}
+
+.caretIcon--cima-aproveitar{
+  margin-top: 245px;
+}
+

@@ -1,0 +1,10 @@
+.formSubmitContainer{
+  margin: 46px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.formSubmitButton :global(.vtex-button){
+  width: 184px;
+}

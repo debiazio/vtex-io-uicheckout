@@ -1,0 +1,2227 @@
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#script_rd",
+      // "responsive-layout.desktop#gif-animado-parcelamento",
+      // "responsive-layout.mobile#gif-animado-parcelamento",
+      "flex-layout.row#product-breadcrumb",
+      "responsive-layout.desktop#availability",
+      "responsive-layout.mobile#availability",
+      "flex-layout.row#titulo-top-sales",
+      "flex-layout.row#topsales",
+      "rich-text#certificacoes-titulo",
+      "flex-layout.row#certificacoes"
+    ]
+  },
+  // LAYOUT DO DESKTOP LINHA DO GIF
+  "responsive-layout.desktop#gif-animado-parcelamento": {
+    "children": [
+      "flex-layout.row#banner-superior-desktop"
+    ]
+  },
+  //linha do banner(gif) DESKTOP
+  "flex-layout.row#banner-superior-desktop": {
+    "props": {
+      "blockClass": "gif-animado"
+    },
+    "children": [
+      "image#banner-gif"
+    ]
+  },
+  "image#banner-gif": {
+    "props": {
+      "blockClass": "gif-animado-parcelas-img",
+      "src": "assets/banner_10x.gif",
+      "alt": "Banner Image",
+      "width": 1120,
+      "height": 80
+    }
+  },
+  // LAYOUT DO MOBILE LINHA DO GIF
+  "responsive-layout.mobile#gif-animado-parcelamento": {
+    "children": [
+      "flex-layout.row#banner-superior-mobile"
+    ]
+  },
+  //linha do banner(gif) MOBILE
+  "flex-layout.row#banner-superior-mobile": {
+    "props": {
+      "blockClass": "gif-animado"
+    },
+    "children": [
+      "image#mobile-banner-gif"
+    ]
+  },
+  "image#mobile-banner-gif": {
+    "props": {
+      "blockClass": "gif-animado-parcelas-img",
+      "src": "assets/banner_10x.gif",
+      "alt": "Banner Image",
+      "width": 1600,
+      "height": 40
+    }
+  },
+  // linha que mostra o caminho até o conteúdo
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "blockClass": "breadcrumb"
+    },
+    "children": [
+      "breadcrumb"
+    ]
+  },
+  // LAYOUT DESKTOP
+  "responsive-layout.desktop#availability": {
+    "children": [
+      "condition-layout.product#availability"
+    ]
+  },
+  // LAYOUT MOBILE
+  "responsive-layout.mobile#availability": {
+    "children": [
+      "condition-layout.product#mobile-availability"
+    ]
+  },
+  // avalia se o produto tem estoque
+  "condition-layout.product#mobile-availability": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#mobile-product-main",
+      "Else": "flex-layout.row#product-availability"
+    }
+  },
+  // avalia se o produto tem estoque desktop
+  "condition-layout.product#availability": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#product-main",
+      "Else": "flex-layout.row#product-availability"
+    }
+  },
+  // linha do produto
+  "flex-layout.row#product-main": {
+    "props": {
+      "blockClass": "product-main"
+    },
+    "children": [
+      "flex-layout.col#product-left-col",
+      "flex-layout.col#product-right-col"
+    ]
+  },
+  // linha do produto
+  "flex-layout.row#mobile-product-main": {
+    "props": {
+      "blockClass": "product-main"
+    },
+    "children": [
+      "flex-layout.col#mobile-product-left-col"
+    ]
+  },
+  // coluna da esquerda MOBILE
+  "flex-layout.col#mobile-product-left-col": {
+    "children": [
+      "flex-layout.row#product-name",
+      "flex-layout.row#add-to-list-btn",
+      "stack-layout",
+      // "condition-layout.product#compre-junto-esmalteira-mobile",
+      // "condition-layout.product#compre-junto-incubadora-mobile",
+      "condition-layout.product#visualizador3d-sweet-pink", //vr
+      "condition-layout.product#visualizador3d-sweet-black",
+      "product-rating-summary", // avaliações
+      "flex-layout.row#list-price-savings", // preco sem desconto, riscado
+      "flex-layout.row#selling-price", // preco a vista
+      "flex-layout.row#linha-parcelas",
+      "sku-selector",
+      "flex-layout.row#mobile-quantidade-cep",
+      "flex-layout.row#vantagens-pgto-a-vista",
+      "condition-layout.product#branco-perola",
+      "condition-layout.product#rosa",
+      "condition-layout.product#rosa-padrao2",
+      "condition-layout.product#rosa-gold",
+      "condition-layout.product#rosa-gold-padrao2",
+      "condition-layout.product#rose-gold-laBelle-8l",
+      "condition-layout.product#rose-gold-labelle-8l-padrao2",
+      "condition-layout.product#rose-gold-idealclave-8l",
+      "condition-layout.product#rose-gold-idealclave-8l-padrao2",
+      "condition-layout.product#perola-idealclave-8l",
+      "condition-layout.product#perola-idealclave-8l-padrao2",
+      "condition-layout.product#perola-8l-labelle",
+      "condition-layout.product#perola-8l-labelle-padrao2",
+      "condition-layout.product#rosa-idealclave-8l",
+      "condition-layout.product#rosa-idealclave-8l-padrao2",
+      "condition-layout.product#rosa-laBelle-8l",
+      "condition-layout.product#rosa-laBelle-8l-padrao2",
+      "flex-layout.row#description",
+      "condition-layout.product#manual-21l-vida",
+      "condition-layout.product#manual-12l-21l-opta",
+      "condition-layout.product#manual-30-42-60-75-vida",
+      "condition-layout.product#manual-75-vida-VERTICAL",
+      "product-specification-group#table",
+      "flex-layout.row#relatedProducts",
+      "flex-layout.row#reviews-and-ratings"
+    ],
+    "props": {
+      "width": "60%"
+    }
+  },
+  // // CONDICIONAL PARA APARECER ESMALTEIRA
+  // "condition-layout.product#compre-junto-esmalteira-mobile": {
+  //   "props": {
+  //     "blockClass": "condicional-compre-junto-incubadora",
+  //     "conditions": [
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2795"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2797"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2886"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2902"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2798"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2796"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2885"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2887"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2895"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2903"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2905"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2898"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2894"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2893"
+  //         }
+  //       },
+  //       {
+  //         "subject": "productId",
+  //         "arguments": {
+  //           "id": "2897"
+  //         }
+  //       }
+  //     ],
+  //     "matchType": "any",
+  //     "Then": "flex-layout.row#compre-junto-esmalteira-mobile"
+  //   }
+  // },
+  "flex-layout.row#compre-junto-esmalteira-mobile": {
+    "props": {
+      "blockClass": "content-compre-junto-incubadora"
+    },
+    "children": [
+      "flex-layout.row#linha-dia-consumidor-esmalteira-mobile"
+    ]
+  },
+  "flex-layout.row#linha-dia-consumidor-esmalteira-mobile": {
+    "props": {
+      "blockClass": "linha-dia-consumidor-incubadora",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "image#dia-do-consumidor-esmalteira-mobile"
+      // "modal-trigger#dia-consumidor-esmalteira-mobile"
+    ]
+  },
+  "image#dia-do-consumidor-esmalteira-mobile": {
+    "props": {
+      "blockClass": "imagem-dia-do-consumidor-incubadora",
+      "alt": "Dia do Consumidor",
+      "src": "assets/Banner MOBILE compre e ganhe.webp"
+    }
+  },
+  // "modal-trigger#dia-consumidor-esmalteira-mobile": {
+  //   "props": {
+  //     "trigger": "load"
+  //   },
+  //   "children": [
+  //     "modal-layout#dia-consumidor-esmalteira-mobile"
+  //   ]
+  // },
+  "modal-layout#dia-consumidor-esmalteira-mobile": {
+    "props": {
+      "blockClass": "modal-banner-dia-consumidor-incubadora"
+    },
+    "children": [
+      "modal-header#close-dia-consumidor-esmalteira-mobile",
+      "image#dia-do-consumidor-esmalteira-mobile"
+    ]
+  },
+  "modal-header#close-dia-consumidor-esmalteira-mobile": {
+    "props": {
+      "blockClass": "close-dia-consumidor",
+      "showCloseButton": true
+    }
+  },
+
+  // LINHA DE PREÇO PARCELADO MOBILE
+  "flex-layout.row#linha-parcelas": {
+    "props": {
+      "blockClass": "parcelas-mobile"
+    },
+    "children": [
+      "product-installments", // preco parcelas
+      "product-spot-price-savings"
+    ]
+  },
+  "flex-layout.row#mobile-quantidade-cep": {
+    "props": {
+      "blockClass": "mobile-qtde-cep"
+    },
+    "children": [
+      "product-quantity",
+      "product-assembly-options",
+      "availability-subscriber", // avise-me disponibilidade
+      "flex-layout.row#botoes-comprar-bucarcep"
+    ]
+  },
+  // linha favoritos mobile
+  "flex-layout.row#add-to-list-btn": {
+    "props": {
+      "blockClass": "favoritos-mobile"
+    },
+    "children": [
+      "add-to-list-btn"
+    ]
+  },
+  // coluna da esquerda desktop
+  "flex-layout.col#product-left-col": {
+    "children": [
+      "stack-layout",
+      "condition-layout.product#compre-junto-esmalteira",
+      "condition-layout.product#visualizador3d-sweet-pink",
+      "condition-layout.product#visualizador3d-sweet-black",
+      "condition-layout.product#branco-perola",
+      "condition-layout.product#rosa",
+      "condition-layout.product#rosa-gold",
+      "condition-layout.product#rosa-gold-padrao2",
+      "condition-layout.product#rose-gold-laBelle-8l",
+      "condition-layout.product#rose-gold-labelle-8l-padrao2",
+      "condition-layout.product#rose-gold-idealclave-8l",
+      "condition-layout.product#rose-gold-idealclave-8l-padrao2",
+      "condition-layout.product#perola-idealclave-8l",
+      "condition-layout.product#perola-idealclave-8l-padrao2",
+      "condition-layout.product#perola-8l-labelle",
+      "condition-layout.product#perola-8l-labelle-padrao2",
+      "condition-layout.product#rosa-idealclave-8l",
+      "condition-layout.product#rosa-idealclave-8l-padrao2",
+      "condition-layout.product#rosa-laBelle-8l",
+      "condition-layout.product#rosa-laBelle-8l-padrao2",
+      "flex-layout.row#description",
+      "condition-layout.product#manual-21l-vida",
+      "condition-layout.product#manual-12l-21l-opta",
+      "condition-layout.product#manual-30-42-60-75-vida",
+      "condition-layout.product#manual-75-vida-VERTICAL",
+      "product-specification-group#table",
+      "flex-layout.row#reviews-and-ratings",
+      "flex-layout.row#relatedProducts"
+    ],
+    "props": {
+      "width": "60%"
+    }
+  },
+  // CONDICIONAL PARA APAERCER BANNER ESMALTEIRA NAS AUTOCLAVES
+  "condition-layout.product#compre-junto-esmalteira": {
+    "props": {
+      "blockClass": "condicional-compre-junto-incubadora",
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2795"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2797"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2886"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2902"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2798"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2796"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2885"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2887"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2895"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2903"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2905"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2898"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2894"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2893"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2897"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row#compre-junto-esmalteira"
+    }
+  },
+  "flex-layout.row#compre-junto-esmalteira": {
+    "props": {
+      "blockClass": "content-compre-junto-incubadora"
+    },
+    "children": [
+      "flex-layout.row#linha-dia-consumidor-esmalteira"
+    ]
+  },
+  "flex-layout.row#linha-dia-consumidor-esmalteira": {
+    "props": {
+      "blockClass": "linha-dia-consumidor-incubadora",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "image#dia-do-consumidor-esmalteira"
+    ]
+  },
+  "image#dia-do-consumidor-esmalteira": {
+    "props": {
+      "blockClass": "imagem-dia-do-consumidor-incubadora",
+      "alt": "Dia do Consumidor",
+      "src": "assets/Banner Desktop compre e ganhe.webp"
+    }
+  },
+
+//CONDITIONAL DO VR sweet pink
+  "condition-layout.product#visualizador3d-sweet-pink": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2945" //sweet pink
+          }
+        }
+      ],
+      "Then": "flex-layout.row#visualizador-360" //visualizador 3d bellinha perola
+    }
+  },
+
+  "flex-layout.row#visualizador-360": {
+    "props": {
+      "blockClass": "conteiner-360"
+    },
+    "children": [
+      "image#icone360",
+      "vr-bellinha-rosa"
+    ]
+  },
+  "image#icone360": {
+    "props": {
+      "blockClass": "icone360",
+      "src": "assets/360-degrees.svg",
+      "alt": "Ícone 360°"
+    }
+  },
+  //CONDITIONAL DO VR sweet black
+  "condition-layout.product#visualizador3d-sweet-black": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2948" //sweet black
+          }
+        }
+      ],
+      "Then": "flex-layout.row#visualizador-360-black" //visualizador 3d bellinha perola
+    }
+  },
+
+  "flex-layout.row#visualizador-360-black": {
+    "props": {
+      "blockClass": "conteiner-360"
+    },
+    "children": [
+      "image#icone360",
+      "vr-bellinha-black"
+    ]
+  },
+
+  // "image#brinde-horizontais-blackFriday": {
+  //   "props": {
+  //     "src": "assets/brinde-horizontais.webp",
+  //     "alt": "Imagem com brinde da Black Friday - horizontais",
+  //     "blockClass": "img-brindetriplo-bf-5l-8l"
+  //   }
+  // },
+  // // BRINDES AUTOCLAVES 5L E 8L BLACK FRIDAY
+  // "flex-layout.row#custom-pdp-brinde-5l-8l-black-friday": {
+  //   "props": {
+  //     "blockClass": "condicional-brinde-5l-8l"
+  //   },
+  //   "children": [
+  //     "image#brinde-blackFriday-5l8l"
+  //   ]
+  // },
+  // condicional branco
+  "condition-layout.product#branco-perola": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cor",
+            "value": "Pérola"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "5L"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-layout-perola"
+    },
+    "title": "Condicional Branco pérola 5l"
+  },
+  "flex-layout.row#custom-pdp-layout-perola": {
+    "props": {
+      "blockClass": "conteiner-pai-imagens-extras"
+    },
+    "children": [
+      "flex-layout.col#fotos-branco-perola"
+    ],
+    "title": "Fotos branco pérola"
+  },
+  "flex-layout.col#fotos-branco-perola": {
+    "props": {
+      "blockClass": "imagens-extras"
+    },
+    "children": [
+      "video#branco-perola-5l",
+      "image#branco-perola-1",
+      "image#branco-perola-2",
+      "image#branco-perola-3",
+      "image#branco-perola-4",
+      "image#branco-perola-5",
+      "image#branco-perola-6"
+    ]
+  },
+  "video#branco-perola-5l": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": true,
+      "autoPlay": true,
+      "src": "assets/labell_5l_perola.mp4",
+      "muted": true
+    }
+  },
+  "image#branco-perola-1": {
+    "props": {
+      "src": "assets/branco-perola-1.webp",
+      "alt": "Imagem autoclave branco pérola",
+      "width": "100%"
+    }
+  },
+  "image#branco-perola-2": {
+    "props": {
+      "src": "assets/branco-perola-2.webp",
+      "alt": "Imagem autoclave branco pérola",
+      "width": "100%"
+    }
+  },
+  "image#branco-perola-3": {
+    "props": {
+      "src": "assets/branco-perola-3.webp",
+      "alt": "Imagem autoclave branco pérola",
+      "width": "100%"
+    }
+  },
+  "image#branco-perola-4": {
+    "props": {
+      "src": "assets/branco-perola-4.webp",
+      "alt": "Imagem autoclave branco pérola",
+      "width": "100%"
+    }
+  },
+  "image#branco-perola-5": {
+    "props": {
+      "src": "assets/branco-perola-5.webp",
+      "alt": "Imagem autoclave branco pérola",
+      "width": "100%"
+    }
+  },
+  "image#branco-perola-6": {
+    "props": {
+      "src": "assets/branco-perola-6.webp",
+      "alt": "Imagem autoclave branco pérola",
+      "width": "100%"
+    }
+  },
+  // condicional rosa
+  "condition-layout.product#rosa": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cor",
+            "value": "Rosa"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "5L"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-layout-rosa"
+    }
+  },
+  // condicional rosa padrao 2
+  "condition-layout.product#rosa-padrao2": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": {
+            "Id": "2765"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-layout-rosa"
+    }
+  },
+  "flex-layout.row#custom-pdp-layout-rosa": {
+    "props": {
+      "blockClass": "conteiner-pai--imagens-extras"
+    },
+    "children": [
+      "flex-layout.col#fotos-branco-rosa"
+    ],
+    "title": "Fotos Rosa 5l"
+  },
+  "flex-layout.col#fotos-branco-rosa": {
+    "props": {
+      "blockClass": "imagens-extras"
+    },
+    "children": [
+      "video#rosa-5l",
+      "image#rosa-1",
+      "image#rosa-2",
+      "image#rosa-3",
+      "image#rosa-4",
+      "image#rosa-5",
+      "image#rosa-6",
+      "image#rosa-7",
+      "image#rosa-8",
+      "image#rosa-9"
+    ]
+  },
+  "video#rosa-5l": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": true,
+      "autoPlay": true,
+      "src": "assets/labell_5l_rosa.mp4",
+      "muted": true
+    }
+  },
+  "image#rosa-1": {
+    "props": {
+      "src": "assets/rosa-1.webp",
+      "alt": "Imagem autoclave rosa",
+      "width": "100%"
+    }
+  },
+  "image#rosa-2": {
+    "props": {
+      "src": "assets/rosa-2.webp",
+      "alt": "Imagem autoclave rosa",
+      "width": "100%"
+    }
+  },
+  "image#rosa-3": {
+    "props": {
+      "src": "assets/rosa-3.webp",
+      "alt": "Imagem autoclave rosa",
+      "width": "100%"
+    }
+  },
+  "image#rosa-4": {
+    "props": {
+      "src": "assets/rosa-4.webp",
+      "alt": "Imagem autoclave rosa",
+      "width": "100%"
+    }
+  },
+  "image#rosa-5": {
+    "props": {
+      "src": "assets/rosa-5.webp",
+      "alt": "Imagem autoclave rosa",
+      "width": "100%"
+    }
+  },
+  "image#rosa-6": {
+    "props": {
+      "src": "assets/rosa-6.webp",
+      "alt": "Imagem autoclave rosa",
+      "width": "100%"
+    }
+  },
+  "image#rosa-7": {
+    "props": {
+      "src": "assets/rosa-7.webp",
+      "alt": "Imagem autoclave rosa",
+      "width": "100%"
+    }
+  },
+  "image#rosa-8": {
+    "props": {
+      "src": "assets/rosa-8.webp",
+      "alt": "Imagem autoclave rosa",
+      "width": "100%"
+    }
+  },
+  "image#rosa-9": {
+    "props": {
+      "src": "assets/rosa-9.webp",
+      "alt": "Imagem autoclave rosa",
+      "width": "100%"
+    }
+  },
+  // rosa-gold 5l condicional
+  "condition-layout.product#rosa-gold": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cor",
+            "value": "Rose Gold"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "5L"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-layout-rosa-gold"
+    }
+  },
+  // rosa-gold 5l condicional padrao 2
+  "condition-layout.product#rosa-gold-padrao2": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cor",
+            "value": "Rose Gold"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "5L"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-layout-rosa-gold"
+    }
+  },
+  "flex-layout.row#custom-pdp-layout-rosa-gold": {
+    "props": {
+      "blockClass": "conteiner-pai--imagens-extras"
+    },
+    "children": [
+      "flex-layout.col#fotos-rosa-gold"
+    ],
+    "title": "Fotos Rose Gold 5l"
+  },
+  "flex-layout.col#fotos-rosa-gold": {
+    "props": {
+      "blockClass": "imagens-extras"
+    },
+    "children": [
+      "video#rose-gold-5l",
+      "image#rosa-gold-1",
+      "image#rosa-gold-2",
+      "image#rosa-gold-3",
+      "image#rosa-gold-4",
+      "image#rosa-gold-5",
+      "image#rosa-gold-6",
+      "image#rosa-gold-7",
+      "image#rosa-gold-8",
+      "image#rosa-gold-9"
+    ]
+  },
+  "video#rose-gold-5l": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": true,
+      "autoPlay": true,
+      "src": "assets/labell_5l_rose_gold.mp4",
+      "muted": true
+    }
+  },
+  "image#rosa-gold-1": {
+    "props": {
+      "src": "assets/rosa-gold-1.webp",
+      "alt": "Imagem autoclave rosa-gold",
+      "width": "100%"
+    }
+  },
+  "image#rosa-gold-2": {
+    "props": {
+      "src": "assets/rosa-gold-2.webp",
+      "alt": "Imagem autoclave rosa-gold",
+      "width": "100%"
+    }
+  },
+  "image#rosa-gold-3": {
+    "props": {
+      "src": "assets/rosa-gold-3.webp",
+      "alt": "Imagem autoclave rosa-gold",
+      "width": "100%"
+    }
+  },
+  "image#rosa-gold-4": {
+    "props": {
+      "src": "assets/rosa-gold-4.webp",
+      "alt": "Imagem autoclave rosa-gold",
+      "width": "100%"
+    }
+  },
+  "image#rosa-gold-5": {
+    "props": {
+      "src": "assets/rosa-gold-5.webp",
+      "alt": "Imagem autoclave rosa-gold",
+      "width": "100%"
+    }
+  },
+  "image#rosa-gold-6": {
+    "props": {
+      "src": "assets/rosa-gold-6.webp",
+      "alt": "Imagem autoclave rosa-gold",
+      "width": "100%"
+    }
+  },
+  "image#rosa-gold-7": {
+    "props": {
+      "src": "assets/rosa-gold-7.webp",
+      "alt": "Imagem autoclave rosa-gold",
+      "width": "100%"
+    }
+  },
+  "image#rosa-gold-8": {
+    "props": {
+      "src": "assets/rosa-gold-8.webp",
+      "alt": "Imagem autoclave rosa-gold",
+      "width": "100%"
+    }
+  },
+  "image#rosa-gold-9": {
+    "props": {
+      "src": "assets/rosa-gold-9.webp",
+      "alt": "Imagem autoclave rosa-gold",
+      "width": "100%"
+    }
+  },
+  // ideaclave rose gold 8 litros
+  "condition-layout.product#rose-gold-laBelle-8l": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cor",
+            "value": "Rose Gold"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "8L"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Modelo",
+            "value": "LaBelle"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-layout-rosa-gold-8l"
+    },
+    "title": "Condicional Rose Gold 8l"
+  },
+  // LABELLE 8 LITROS ROSE GOLD ESPEC 2
+  "condition-layout.product#rose-gold-labelle-8l-padrao2": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cores",
+            "value": "Rose Gold"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "8 Litros"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Modelo",
+            "value": "LaBelle"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-layout-rosa-gold-8l"
+    },
+    "title": "Condicional Rose gold 8l"
+  },
+  "flex-layout.row#custom-pdp-layout-rosa-gold-8l": {
+    "props": {
+      "blockClass": "conteiner-pai--imagens-extras"
+    },
+    "children": [
+      "flex-layout.col#fotos-rosa-gold-8l"
+    ],
+    "title": "Fotos Rose Gold 8l"
+  },
+  "flex-layout.col#fotos-rosa-gold-8l": {
+    "props": {
+      "blockClass": "imagens-extras"
+    },
+    "children": [
+      "video#rosegold8l"
+    ],
+    "title": "Vídeo Rose Gold 8l"
+  },
+  "video#rosegold8l": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": true,
+      "autoPlay": true,
+      "src": "assets/IDEALCLAVE 8L_12.3538.mp4",
+      "muted": true
+    },
+    "title": "Vídeo Autoclave 8 litros Rose Gold LaBelle"
+  },
+  // IDEALCLAVE rose gold 8 litros
+  "condition-layout.product#rose-gold-idealclave-8l": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cor",
+            "value": "Rose Gold"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "8L"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Modelo",
+            "value": "Idealclave"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-layout-rosa-gold-8l-idealclave"
+    },
+    "title": "Condicional Rose Gold 8l Idealclave"
+  },
+  // IDEALCLAVE rose gold 8 litros ESPEC PADRAO 2
+  "condition-layout.product#rose-gold-idealclave-8l-padrao2": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cores",
+            "value": "Rose Gold"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "8 Litros"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Modelo",
+            "value": "Idealclave"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-layout-rosa-gold-8l-idealclave"
+    },
+    "title": "Condicional Rose Gold 8l Idealclave"
+  },
+  "flex-layout.row#custom-pdp-layout-rosa-gold-8l-idealclave": {
+    "props": {
+      "blockClass": "conteiner-pai--imagens-extras"
+    },
+    "children": [
+      "flex-layout.col#fotos-rosa-gold-8l-idealclave"
+    ]
+  },
+  "flex-layout.col#fotos-rosa-gold-8l-idealclave": {
+    "props": {
+      "blockClass": "imagens-extras"
+    },
+    "children": [
+      "video#rosegold8l-idealclave"
+    ]
+  },
+  "video#rosegold8l-idealclave": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": true,
+      "autoPlay": true,
+      "src": "assets/IDEALCLAVE 8L_12.2497.mp4",
+      "muted": true
+    }
+  },
+  // labelle 8 litros BRANCO PEROLA
+  "condition-layout.product#perola-8l-labelle": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cor",
+            "value": "Pérola"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "8L"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Modelo",
+            "value": "LaBelle"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-layout-perola-8l"
+    },
+    "title": "Condicional branco pérola 8l labelle"
+  },
+  // labelle 8 litros BRANCO PEROLA alternativo padrao
+  "condition-layout.product#perola-8l-labelle-padrao2": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cores",
+            "value": "Pérola"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "8 Litros"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Modelo",
+            "value": "LaBelle"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-layout-perola-8l"
+    },
+    "title": "Condicional branco pérola 8l labelle"
+  },
+  "flex-layout.row#custom-pdp-layout-perola-8l": {
+    "props": {
+      "blockClass": "conteiner-pai--imagens-extras"
+    },
+    "children": [
+      "flex-layout.col#labelle-branco-perola-8l"
+    ]
+  },
+  "flex-layout.col#labelle-branco-perola-8l": {
+    "props": {
+      "blockClass": "imagens-extras"
+    },
+    "children": [
+      "video#brancoPerola8lLabelle"
+    ]
+  },
+  "video#brancoPerola8lLabelle": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": true,
+      "autoPlay": true,
+      "src": "assets/IDEALCLAVE 8L_12.3537.mp4",
+      "muted": true
+    }
+  },
+  // BRANCO PEROLA 8 LITROS IDEALCLAVE
+  "condition-layout.product#perola-idealclave-8l": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cor",
+            "value": "Pérola"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "8L"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Modelo",
+            "value": "Idealclave"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-layout-perola-8l-idealclave"
+    },
+    "title": "Condicional branco pérola 8l idealclave"
+  },
+  // BRANCO PEROLA 8 LITROS IDEALCLAVE padrao ALTERNATIVO
+  "condition-layout.product#perola-idealclave-8l-padrao2": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cores",
+            "value": "Pérola"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "8 Litros"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Modelo",
+            "value": "Idealclave"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-layout-perola-8l-idealclave"
+    },
+    "title": "BRANCO PEROLA 8 LITROS IDEALCLAVE"
+  },
+  "flex-layout.row#custom-pdp-layout-perola-8l-idealclave": {
+    "props": {
+      "blockClass": "conteiner-pai--imagens-extras"
+    },
+    "children": [
+      "flex-layout.col#branco-perola-8l"
+    ],
+    "title": "Imagens Idealclave branco perola 8L"
+  },
+  "flex-layout.col#branco-perola-8l": {
+    "props": {
+      "blockClass": "imagens-extras"
+    },
+    "children": [
+      "video#brancoPerola8l"
+    ]
+  },
+  "video#brancoPerola8l": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": true,
+      "autoPlay": true,
+      "src": "assets/IDEALCLAVE 8L_12.2598.mp4",
+      "muted": true
+    }
+  },
+  // CONDICIONAL ROSA IDEALCLAVE 8 LITROS ;
+  "condition-layout.product#rosa-idealclave-8l": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cores",
+            "value": "Rosa"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "8 Litros"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Modelo",
+            "value": "Idealclave"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-rosa-idealclave-8l"
+    }
+  },
+  // idealclave rosa 8 litros epec alternativas
+  "condition-layout.product#rosa-idealclave-8l-padrao2": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cor",
+            "value": "Rosa"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "8L"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Modelo",
+            "value": "Idealclave"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-rosa-idealclave-8l"
+    }
+  },
+  "flex-layout.row#custom-pdp-rosa-idealclave-8l": {
+    "props": {
+      "blockClass": "conteiner-pai--imagens-extras"
+    },
+    "children": [
+      "flex-layout.col#video-rosa-idealclave-8l"
+    ]
+  },
+  "flex-layout.col#video-rosa-idealclave-8l": {
+    "props": {
+      "blockClass": "imagens-extras"
+    },
+    "children": [
+      "video#rosaIdealclave8l"
+    ]
+  },
+  "video#rosaIdealclave8l": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": true,
+      "autoPlay": true,
+      "src": "assets/IDEALCLAVE 8L_12.2821.mp4",
+      "muted": true
+    }
+  },
+  // CONDICIONAL 8 LITROS LABELLE ROSA
+  "condition-layout.product#rosa-laBelle-8l": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cor",
+            "value": "Rosa"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "8L"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Modelo",
+            "value": "LaBelle"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-rosa-laBelle-8l"
+    }
+  },
+  "flex-layout.row#custom-pdp-rosa-laBelle-8l": {
+    "props": {
+      "blockClass": "conteiner-pai--imagens-extras"
+    },
+    "children": [
+      "flex-layout.col#video-rosa-laBelle-8l"
+    ]
+  },
+  "flex-layout.col#video-rosa-laBelle-8l": {
+    "props": {
+      "blockClass": "imagens-extras"
+    },
+    "children": [
+      "video#rosalaBelle8l"
+    ]
+  },
+  "video#rosalaBelle8l": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": true,
+      "autoPlay": true,
+      "src": "assets/IDEALCLAVE 8L_12.3536.mp4",
+      "muted": true
+    }
+  },
+  // labelle 8 litros rosa espec alternativa
+  "condition-layout.product#rosa-laBelle-8l-padrao2": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Cores",
+            "value": "Rosa"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Capacidade",
+            "value": "8 Litros"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Modelo",
+            "value": "LaBelle"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#custom-pdp-rosa-laBelle-8l"
+    }
+  },
+  "flex-layout.row#reviews-and-ratings": {
+    "props": {
+      "blockClass": "reviews-and-ratings"
+    },
+    "children": [
+      "product-reviews"
+    ]
+  },
+  // imagens - coluna da esquerda
+  "stack-layout": {
+    "props": {
+      "blockClass": "product-image"
+    },
+    "children": [
+      "flex-layout.row#product-image"
+    ]
+  },
+  // imagem  - coluna da esquerda
+  "flex-layout.row#product-image": {
+    "children": [
+      "product-images"
+    ]
+  },
+  "product-images": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "auto"
+      },
+      "width": "500px",
+      "maxheight": "800px",
+      "contentType": "all",
+      "displayMode": "carousel",
+      "zoomMode": "in-place-click",
+      "displayThumbnailsArrows": true,
+      "hiddenImages": "thumbcor"
+    }
+  },
+  // coluna da direita
+  "flex-layout.col#product-right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "width": "40%",
+      "blockClass": "coluna-direita"
+    },
+    "children": [
+      "flex-layout.row#product-name", // nome
+      "add-to-list-btn",
+      "product-rating-summary", // avaliações
+      "flex-layout.row#list-price-savings", // preco sem desconto, riscado
+      "flex-layout.row#selling-price", // preco a vista
+      "product-installments", // preco parcelas
+      "product-spot-price-savings",
+      "sku-selector",
+      "product-quantity",
+      "product-assembly-options",
+      "availability-subscriber", // avise-me disponibilidade
+      "flex-layout.row#botoes-comprar-bucarcep",
+      "flex-layout.row#vantagens-pgto-a-vista"
+    ]
+  },
+  "flex-layout.row#product-name": {
+    "props": {
+      "marginBottom": 3,
+      "blockClass": "product-name",
+      "colSizing": "auto"
+    },
+    "children": [
+      "vtex.store-components:product-name"
+    ]
+  },
+  "flex-layout.row#description": {
+    "props": {
+      "marginBottom": 7,
+      "blockClass": "descricao"
+    },
+    "children": [
+      "product-description"
+    ]
+  },
+  "product-description": {
+    "props": {
+      "showTitle": true,
+      "collapseContent": true,
+      "blockClass": "texto-descricao"
+    }
+  },
+  "condition-layout.product#manual-21l-vida": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2889"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2890"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row#custom-pdp-layout-manual-21l-vida"
+    }
+  },
+  "flex-layout.row#custom-pdp-layout-manual-21l-vida": {
+    "props": {
+      "blockClass": "manual-pdp"
+    },
+    "children": [
+      "link#manual-21l-vida"
+    ]
+  },
+  "link#manual-21l-vida": {
+    "props": {
+      "href": "https://stermax.com.br/images_idealine/manuais/FT.VIDA21L-%20REV001%20_%2019.03.2025%20ATUALIZADO.pdf",
+      "blockClass": "manuais-pdp",
+      "target": "_blank"
+    },
+    "children": [
+      "image#manual-download",
+      "rich-text#texto-baixar"
+    ]
+  },
+  "image#manual-download": {
+    "props": {
+      "src": "assets/download-branco.svg",
+      "alt": "Baixar ficha técnica",
+      "width": "24px"
+    }
+  },
+  // texto do botão de download - MODELO
+  "rich-text#texto-baixar": {
+    "props": {
+      "text": "Baixar ficha técnica",
+      "blockClass": "texto-baixar-ficha-tecnica"
+    }
+  },
+  "condition-layout.product#manual-12l-21l-opta": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2939"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2940"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2941"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2942"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2943"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2944"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2814"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2869"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2881"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2872"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2875"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2878"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row#custom-pdp-layout-manual-12l-21l-opta"
+    }
+  },
+  "flex-layout.row#custom-pdp-layout-manual-12l-21l-opta": {
+    "props": {
+      "blockClass": "manual-pdp"
+    },
+    "children": [
+      "link#manual-12l-21l-opta"
+    ]
+  },
+  "link#manual-12l-21l-opta": {
+    "props": {
+      "href": "https://stermax.com.br/images_idealine/manuais/FT.OPTA12L.21L- REV001 _ 19.03.2025 ATUALIZADO.pdf",
+      "blockClass": "manuais-pdp",
+      "target": "_blank"
+    },
+    "children": [
+      "image#manual-download",
+      "rich-text#texto-baixar"
+    ]
+  },
+  "condition-layout.product#manual-30-42-60-75-vida": {
+    "props": {
+      "conditions": [
+        // 30 LITROS
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2812"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2845"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2842"
+          }
+        },
+        // 42 LITROS
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2832"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2833"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2835"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2834"
+          }
+        },
+        // 60 LITROS
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2831"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2829"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2827"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2828"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2830"
+          }
+        },
+        // 75 LITROS
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2826"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2810"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2824"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2825"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2822"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2823"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row#custom-pdp-layout-manual-30-42-60-75-vida"
+    }
+  },
+  "flex-layout.row#custom-pdp-layout-manual-30-42-60-75-vida": {
+    "props": {
+      "blockClass": "manual-pdp"
+    },
+    "children": [
+      "link#manual-30-42-60-75-vida"
+    ]
+  },
+  "link#manual-30-42-60-75-vida": {
+    "props": {
+      "href": "https://stermax.com.br/images_idealine/manuais/FT.VIDA30.42.60.75L- REV001 _ 19.03.2025 ATUALIZADO.pdf",
+      "blockClass": "manuais-pdp",
+      "target": "_blank"
+    },
+    "children": [
+      "image#manual-download",
+      "rich-text#texto-baixar"
+    ]
+  },
+  "condition-layout.product#manual-75-vida-VERTICAL": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2914"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2799"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2801"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2793"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2800"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row#custom-pdp-layout-manual-75-vida-vertical"
+    }
+  },
+  "flex-layout.row#custom-pdp-layout-manual-75-vida-vertical": {
+    "props": {
+      "blockClass": "manual-pdp"
+    },
+    "children": [
+      "link#manual-75-vida-vertical"
+    ]
+  },
+  "link#manual-75-vida-vertical": {
+    "props": {
+      "href": "https://stermax.com.br/images_idealine/manuais/FT.VIDA75LVERT_ REV001 - 19.02.2025 ATUALIZADO.pdf",
+      "blockClass": "manuais-pdp",
+      "target": "_blank"
+    },
+    "children": [
+      "image#manual-download",
+      "rich-text#texto-baixar"
+    ]
+  },
+  "sku-selector": {
+    "props": {
+      "variationsSpacing": 5,
+      "showValueNameForImageVariation": false,
+      "visibility": "always",
+      "initialSelection": "image",
+      "displayThumbnailsArrows": true,
+      "thumbnailImage": "thumbcor"
+    }
+  },
+  "product-quantity": {
+    "props": {
+      "warningQuantityThreshold": 5,
+      "showUnit": true,
+      "showLabel": false,
+      "blockClass": "seletor-quantidade"
+    }
+  },
+  //linha do botão comprar e botão busca cep
+  "flex-layout.row#botoes-comprar-bucarcep": {
+    "props": {
+      "blockClass": "linha-botoes-comprar-buscarCep"
+    },
+    "children": [
+      "flex-layout.col#buy-button_tela-de-produto",
+      "flex-layout.col#botao-buscarCep"
+    ]
+  },
+  "flex-layout.col#buy-button_tela-de-produto": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 7,
+      "blockClass": "botao-de-comprar"
+    },
+    "children": [
+      "add-to-cart-button"
+    ]
+  },
+  //buca cep
+  "flex-layout.col#botao-buscarCep": {
+    "props": {
+      "blockClass": "coluna-buscar-cep"
+    },
+    "children": [
+      "disclosure-layout-group#bucar-cep"
+    ]
+  },
+  "disclosure-layout-group#bucar-cep": {
+    "children": [
+      "disclosure-layout#first-cep"
+    ]
+  },
+  "disclosure-layout#first-cep": {
+    "children": [
+      "disclosure-trigger#first-cep",
+      "disclosure-content#first-cep"
+    ]
+  },
+  "disclosure-trigger#first-cep": {
+    "children": [
+      "rich-text#texto-botao-frete"
+    ]
+  },
+  "disclosure-content#first-cep": {
+    "children": [
+      "flex-layout.row#linha-resultados-frete"
+    ]
+  },
+  "rich-text#texto-botao-frete": {
+    "props": {
+      "blockClass": "texto-botao-frete",
+      "text": "CALCULAR FRETE"
+    }
+  },
+  "flex-layout.row#linha-resultados-frete": {
+    "props": {
+      "blockClass": "linha-resultados-frete"
+    },
+    "children": [
+      "flex-layout.row#cep"
+    ]
+  },
+  "flex-layout.row#cep": {
+    "props": {
+      "blockClass": "resultados-cep"
+    },
+    "children": [
+      "shipping-simulator" //calculo de frete
+    ]
+  },
+  "shipping-simulator": {
+    "props": {
+      "shouldUpdateOrderForm": true,
+      "pricingMode": "grouped"
+    }
+  },
+  "flex-layout.row#product-availability": {
+    "props": {
+      "colGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7
+    },
+    "children": [
+      "flex-layout.col#product-left-col",
+      "flex-layout.col#product-right-col-availability"
+    ]
+  },
+  "flex-layout.col#product-right-col-availability": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "info-availability"
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-identifier.product",
+      "sku-selector",
+      "flex-layout.row#availability"
+    ]
+  },
+  "flex-layout.row#availability": {
+    "props": {
+      "blockClass": "message-availability"
+    },
+    "children": [
+      "availability-subscriber"
+    ]
+  },
+  "flex-layout.row#vantagens-pgto-a-vista": {
+    "props": {
+      "blockClass": "pgto_a_vista"
+    },
+    "children": [
+      "rich-text#vantagens-pgto-a-vista"
+    ],
+    "title": "Vantagens pgto à vista"
+  },
+  "rich-text#vantagens-pgto-a-vista": {
+    "props": {
+      "text": "Pague com pix ou boleto e **ganhe 3% de desconto!**\nEscolha sua forma de pagamento e aproveite ;)\nOfertas promocionais, cupons, brindes e descontos não são acumulativos e estão sujeitos à disponibilidade (verifique na finalização da compra).",
+      "blockClass": "texto-vantagens"
+    }
+  },
+  // PRODUTOS RELACIONADOS
+  "flex-layout.row#relatedProducts": {
+    "props": {
+      "blockClass": "related-products"
+    },
+    "children": [
+      "flex-layout.col#relatedProducts"
+    ],
+    "title": "Protudos Relacionados"
+  },
+  "flex-layout.col#relatedProducts": {
+    "children": [
+      "rich-text#produtos-relacionados",
+      "list-context.product-list#idealine-indica"
+    ]
+  },
+  "rich-text#produtos-relacionados": {
+    "props": {
+      "text": "Idealine Indica",
+      "blockClass": "produtos-relacionados"
+    }
+  },
+  "list-context.product-list#idealine-indica": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#idealine-indica"
+    ],
+    "props": {
+      "category": "28",
+      "orderBy": "OrderByPriceDESC"
+    }
+  },
+  "slider-layout#idealine-indica": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showNavigationArrows": "desktopOnly"
+    }
+  },
+  // PRODUTOS MAIS VENDIDOS titulo
+  "flex-layout.row#titulo-top-sales": {
+    "props": {
+      "blockClass": "content-titulo-top-sales"
+    },
+    "children": [
+      "rich-text#top-sales"
+    ]
+  },
+  "rich-text#top-sales": {
+    "props": {
+      "text": "## **Mais vendidos**"
+    }
+  },
+  "flex-layout.row#topsales": {
+    "props": {
+      "blockClass": "content-top-sales"
+    },
+    "children": [
+      "list-context.product-list#prateleira-top-sales"
+    ]
+  },
+  "list-context.product-list#prateleira-top-sales": {
+    "blocks": [
+      "product-summary.shelf#teste"
+    ],
+    "children": [
+      "slider-layout#top-sales"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    },
+    "title": "Top Sales"
+  },
+  "slider-layout#top-sales": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "desktopOnly"
+    }
+  },
+  "rich-text#certificacoes-titulo": {
+    "props": {
+      "text": "## **Certificações**",
+      "blockClass": "titulo-certificadoes"
+    }
+  },
+  // CERTIFICADOS
+  "flex-layout.row#certificacoes": {
+    "props": {
+      "blockClass": "certificados"
+    },
+    "children": [
+      "flex-layout.col#coluna-certificado",
+      "flex-layout.col#coluna-certificado1",
+      "flex-layout.col#coluna-certificado2",
+      "flex-layout.col#coluna-certificado3"
+    ]
+  },
+  "flex-layout.col#coluna-certificado": {
+    "props": {
+      "blockClass": "coluna-certificado"
+    },
+    "children": [
+      "image#certificado1"
+    ]
+  },
+  "image#certificado1": {
+    "props": {
+      "src": "assets/Mais de 250 mil @4x.webp",
+      "alt": "Líder em vendas"
+    }
+  },
+  "flex-layout.col#coluna-certificado1": {
+    "props": {
+      "blockClass": "coluna-certificado"
+    },
+    "children": [
+      "image#certificado2"
+    ]
+  },
+  "image#certificado2": {
+    "props": {
+      "src": "assets/certificado2.svg",
+      "alt": "ISO"
+    }
+  },
+  "flex-layout.col#coluna-certificado2": {
+    "props": {
+      "blockClass": "coluna-certificado"
+    },
+    "children": [
+      "image#certificado3"
+    ]
+  },
+  "image#certificado3": {
+    "props": {
+      "src": "assets/ID-LINE_SELOS_ANVISA-01.webp",
+      "alt": "Anvisa"
+    }
+  },
+  "flex-layout.col#coluna-certificado3": {
+    "props": {
+      "blockClass": "coluna-certificado"
+    },
+    "children": [
+      "image#certificado4"
+    ]
+  },
+  "image#certificado4": {
+    "props": {
+      "src": "assets/ID-LINE_SELOS_33_ANOS-01.webp",
+      "alt": "Desde 1991"
+    }
+  }
+}

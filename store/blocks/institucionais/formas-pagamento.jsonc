@@ -1,0 +1,81 @@
+{
+    "store.custom#formas-pagamento": {
+      "blocks": [
+        "flex-layout.row#script_rd",
+        "flex-layout.row#formas-pagamento"
+      ]
+    },
+    "flex-layout.row#formas-pagamento": {
+      "props": {
+        "blockClass": "pagina-institucional"
+      },
+      "children": [
+        "flex-layout.col#menu-institucionais-formas-pagamentos",
+        "flex-layout.col#conteudo-formas-pagamento"
+      ],
+      "title": "Página Formas de Pagamento"
+    },
+    "flex-layout.col#menu-institucionais-formas-pagamentos": {
+      "props": {
+        "width": "22%",
+        "blockClass": "menu-institucionais"
+      },
+      "children": [
+        "rich-text#titulo-menu-institucionais",
+        "link#instituicionais-quem-somos",
+        "link#institucionais-politica-privacidade",
+        "flex-layout.row#institucionais-form-pagto-active",
+        "link#institucionais-envio",
+        "link#institucionais-trocas-e-devolucoes"
+      ],
+      "title": "Menu institucionais - Página Quem Somos"
+    },
+    "flex-layout.row#institucionais-form-pagto-active": {
+      "props": {
+        "blockClass": "menu-institucionais-active"
+      },
+      "children": [
+        "flex-layout.col#titulo-form-pgto",
+        "flex-layout.col#institucional-icon-active"
+      ]
+    },
+    "flex-layout.col#titulo-form-pgto": {
+      "props": {
+        "blockClass": "col-titulo-inst"
+      },
+      "children": [
+        "rich-text#titulo-item-menu-formas-pagamento-active"
+      ]
+    },
+
+
+    "flex-layout.col#conteudo-formas-pagamento": {
+      "children": [
+        "rich-text#titulo-formas-pagamento",
+
+        "rich-text#texto-formas-pagamento"
+      ],
+      "props": {
+        "width":"78%",
+        "blockClass": "conteudo-institucionais"
+      },
+      "title": "Conteúdo Formas de Pagamento"
+    },
+
+    "rich-text#titulo-formas-pagamento": {
+      "props": {
+        "text":
+        "## Formas de Pagamento",
+        "blockClass": "titulo-institucionais"
+      },
+      "title": "Titulo - Formas de Pagamento"
+    },
+
+    "rich-text#texto-formas-pagamento": {
+      "props": {
+        "text": "A loja virtual da Idea.line oferece a você diversas opções para seu conforto e facilidade.\n\n**Cartão de crédito:**\n\nAceitamos o pagamento nas bandeiras Visa, Mastercard, Diners, Elo, Amex e Hipercard e com a possibilidade de parcelamento em até 3x sem juros. O valor da parcela mínima a ser paga é definida pelo sistema no momento da compra.\n\nCompras feitas no cartão de crédito, via de regra, tem aprovação em até 2 (duas) horas, podendo chegar em até 48 horas úteis.\n\n**Observações:**\n\nÉ muito importante que os dados cadastrais, inseridos no momento da compra sejam os mesmos do titular do cartão.\n\nOptando em parcelar sua compra, é importante considerar que o valor total da compra deve estar dentro do limite total do crédito disponível em seu cartão.\n\nA autorização da compra é feita por sua instituição financeira, não sendo repassada a loja os motivos de cancelamento ou problemas com seu cartão. Nestes casos, você pode entrar em contato com sua instituição financeira solicitando o aumento do seu limite de crédito ou optar por outra forma de pagamento.\n\n**Boleto bancário à vista e PIX:**\n\nA compra também pode ser realizada através de Boleto Bancário ou PIX com 3% de desconto.\n\nCompras realizadas no boleto à vista, o prazo de aprovação pode chegar em até 72 horas.\n\n**Atenção:** Optando por pagar no cartão de crédito ou boleto à vista, em alguns casos neste período, nossa intermediadora **PAGAR.ME** pode entrar em contato por telefone ou via SMS com o cliente para confirmar os dados cadastrados no momento da compra, garantindo sua segurança.\n\n**Boleto Parcelado:**\n\nContamos com essa novidade em nosso site, possibilitando a você, parcelar as compras sem a necessidade de um cartão de crédito.\n\n**Atenção:** Essa modalidade está sujeita a análise de crédito, realizada pela nossa intermediadora **KOIN**.\n\n**Transferência on-line:**\n\nConte com facilidade do Pix e Ted, nessa modalidade o desconto é de 3%.\n\n**Depósito na “boca” do caixa:**\n\nBasta escolher o método “Pagamento instantâneo” e obter instruções de banco e agência.\n\n**Acesse os sites de nossos parceiros para maiores informações.**\n\nhttps://pagar.me/\n\nhttps://www.koin.com.br/\n\nhttps://www.paymee.com.br/",
+        "blockClass": "conteudo-institucionais"
+      },
+      "title": "conteúdo - Formas de Pagamento"
+    }
+  }

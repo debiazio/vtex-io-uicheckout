@@ -1,0 +1,839 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#ver-tudo",
+      "menu-item#submenuPronta-entrega",
+      "menu-item#idealclave-bellinha",
+      "menu-item#submenuMarceloBrito",
+      "menu-item#mobiliario-tecnico",
+      "menu-item#beleza-estetica",
+      "menu-item#odontologia",
+      "menu-item#linha-veterinaria",
+      "menu-item#clinicas-hospitais"
+    ]
+  },
+  "menu-item#ver-tudo": {
+    "props": {
+      "id": "menu-item-ver-tudo",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Ver tudo",
+        "text": "Ver tudo"
+      },
+      "blockClass": "menu-superior"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#categorias-ver-tudo"
+    ]
+  },
+  "vtex.menu@2.x:submenu#categorias-ver-tudo": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categorias-ver-tudo"
+    ]
+  },
+  "vtex.menu@2.x:menu#categorias-ver-tudo": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#submenuVerTudo-acessorios-ester",
+      "menu-item#submenuVerTudo-mobiliario-tecnico",
+      "menu-item#submenuVerTudo-pronta-entrega",
+      "menu-item#submenuVerTudoBellinha",
+      "menu-item#submenuVerTudoMarceloBrito",
+      "menu-item#submenuVerTudo-beleza-estetica",
+      "menu-item#submenuVerTudo-linha-veterinaria",
+      "menu-item#submenuVerTudo-clinicas-hospitais",
+      "menu-item#submenuVerTudo-odontologia",
+      "menu-item#submenuVerTudo-pronta-entrega-horizontal"
+    ]
+  },
+  "menu-item#submenuVerTudo-acessorios-ester": {
+    "props": {
+      "id": "menu-item-submenuVerTudo-apparel-clothing",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios-para-esterilizacao",
+        "noFollow": false,
+        "tagTitle": "Acessórios para Esterilização",
+        "text": "Acessórios para Esterilização"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuMarceloBrito": {
+    "props": {
+      "id": "menu-dropdown",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/dr--marcelo-brito",
+        "noFollow": false,
+        "tagTitle": "Dr. Marcelo Brito",
+        "text": "Dr. Marcelo Brito"
+      },
+      "blockClass": "menu-superior"
+    }
+  },
+  "menu-item#submenuPronta-entrega": {
+    "props": {
+      "id": "menu-dropdown",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pronta-entrega",
+        "noFollow": false,
+        "tagTitle": "Pronta Entrega",
+        "text": "Pronta Entrega"
+      },
+      "blockClass": "menu-superior"
+    }
+  },
+  "menu-item#submenuVerTudoBellinha": {
+    "props": {
+      "id": "menu-dropdown",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/idealclave-bellinha/idealclave-bellinha-5l",
+        "noFollow": false,
+        "tagTitle": "Idealclave Bellinha",
+        "text": "Idealclave Bellinha"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuVerTudoMarceloBrito": {
+    "props": {
+      "id": "menu-dropdown",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/dr--marcelo-brito",
+        "noFollow": false,
+        "tagTitle": "Dr. Marcelo Brito",
+        "text": "Dr. Marcelo Brito"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuVerTudo-beleza-estetica": {
+    "props": {
+      "id": "menu-dropdown",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/beleza-e-estetica",
+        "noFollow": false,
+        "tagTitle": "Beleza e Estética",
+        "text": "Beleza e Estética"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuVerTudo-odontologia": {
+    "props": {
+      "id": "menu-dropdown",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/odontologia",
+        "noFollow": false,
+        "tagTitle": "Odontologia",
+        "text": "Odontologia"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuVerTudo-pronta-entrega": {
+    "props": {
+      "id": "menu-dropdown",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pronta-entrega",
+        "noFollow": false,
+        "tagTitle": "Pronta Entrega",
+        "text": "Pronta Entrega"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuVerTudo-pronta-entrega-horizontal": {
+    "props": {
+      "id": "menu-dropdown",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pronta-entrega-horizontal",
+        "noFollow": false,
+        "tagTitle": "Pronta Entrega Horizontal",
+        "text": "Pronta Entrega Horizontal"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuVerTudo-linha-veterinaria": {
+    "props": {
+      "id": "menu-dropdown",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/veterinaria",
+        "noFollow": false,
+        "tagTitle": "Linha Veterinária",
+        "text": "Linha Veterinária"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuVerTudo-clinicas-hospitais": {
+    "props": {
+      "id": "menu-dropdown",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clinicas-e-hospitais",
+        "noFollow": false,
+        "tagTitle": "Clínicas e Hospitais",
+        "text": "Clínicas e Hospitais"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuVerTudo-mobiliario-tecnico": {
+    "props": {
+      "id": "menu-dropdown",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/idealovers-by--mad-u",
+        "noFollow": false,
+        "tagTitle": "Idealovers by MAD.U",
+        "text": "Idealovers by MAD.U"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#beleza-estetica": {
+    "props": {
+      "id": "menu-principal",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/beleza-e-estetica",
+        "noFollow": false,
+        "tagTitle": "Beleza e Estética",
+        "text": "Beleza e Estética"
+      },
+      "blockClass": "menu-superior"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#categorias-beleza-estetica"
+    ]
+  },
+  "vtex.menu@2.x:submenu#categorias-beleza-estetica": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categorias-beleza-estetica"
+    ]
+  },
+  "vtex.menu@2.x:menu#categorias-beleza-estetica": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#submenuBelezaEstetica-autoclaves-home-care",
+      "menu-item#submenuBelezaEstetica-autoclaves-manicure",
+      "menu-item#submenuBelezaEstetica-autoclaves-podologia",
+      "menu-item#submenuBelezaEstetica-autoclaves-salao-beleza"
+    ]
+  },
+  "menu-item#submenuBelezaEstetica-autoclaves-home-care": {
+    "props": {
+      "id": "menu-item-submenuBelezaEstetica",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/beleza-e-estetica/autoclaves-para-home-care",
+        "noFollow": false,
+        "tagTitle": "Autoclaves para Home Care",
+        "text": "Autoclaves para Home Care"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuBelezaEstetica-autoclaves-manicure": {
+    "props": {
+      "id": "menu-item-submenuBelezaEstetica",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/beleza-e-estetica/autoclaves-para-manicure",
+        "noFollow": false,
+        "tagTitle": "Autoclaves para Manicure",
+        "text": "Autoclaves para Manicure"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuBelezaEstetica-autoclaves-podologia": {
+    "props": {
+      "id": "menu-item-submenuBelezaEstetica",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/beleza-e-estetica/autoclaves-para-podologia",
+        "noFollow": false,
+        "tagTitle": "Autoclaves para Podologia",
+        "text": "Autoclaves para Podologia"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuBelezaEstetica-autoclaves-salao-beleza": {
+    "props": {
+      "id": "menu-item-submenuBelezaEstetica",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/beleza-e-estetica/autoclaves-para-salao-de-beleza",
+        "noFollow": false,
+        "tagTitle": "Autoclaves para Salão de Beleza",
+        "text": "Autoclaves para Salão de Beleza"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#odontologia": {
+    "props": {
+      "id": "menu-principal",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/odontologia",
+        "noFollow": false,
+        "tagTitle": "Odontologia",
+        "text": "Odontologia"
+      },
+      "blockClass": "menu-superior"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#categorias-odontologia"
+    ]
+  },
+  "vtex.menu@2.x:submenu#categorias-odontologia": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categorias-odontologia"
+    ]
+  },
+  "vtex.menu@2.x:menu#categorias-odontologia": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#submenuOdontologia-autoclaves-odontologia"
+    ]
+  },
+  "menu-item#submenuOdontologia-autoclaves-odontologia": {
+    "props": {
+      "id": "menu-item-submenuOdontologia",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/odontologia/autoclaves-para-odontologia",
+        "noFollow": false,
+        "tagTitle": "Autoclaves para Odontologia",
+        "text": "Autoclaves para Odontologia"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#linha-veterinaria": {
+    "props": {
+      "id": "menu-principal",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/veterinaria",
+        "noFollow": false,
+        "tagTitle": "Linha Veterinária",
+        "text": "Linha Veterinária"
+      },
+      "blockClass": "menu-superior"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#categorias-veterinaria"
+    ]
+  },
+  "vtex.menu@2.x:submenu#categorias-veterinaria": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categorias-veterinaria"
+    ]
+  },
+  "vtex.menu@2.x:menu#categorias-veterinaria": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#submenuVeterinaria-autoclaves-veterinaria"
+    ]
+  },
+  "menu-item#submenuVeterinaria-autoclaves-veterinaria": {
+    "props": {
+      "id": "menu-item-submenuVeterinaria",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/veterinaria/autoclaves-para-veterinaria",
+        "noFollow": false,
+        "tagTitle": "Autoclaves para Veterinária",
+        "text": "Autoclaves para Veterinária"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#clinicas-hospitais": {
+    "props": {
+      "id": "menu-principal",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clinicas-e-hospitais",
+        "noFollow": false,
+        "tagTitle": "Clínicas e Hospitais",
+        "text": "Clínicas e Hospitais"
+      },
+      "blockClass": "menu-superior"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#categorias-clinicas-hospitais"
+    ]
+  },
+  "vtex.menu@2.x:submenu#categorias-clinicas-hospitais": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categorias-clinicas-hospitais"
+    ]
+  },
+  "vtex.menu@2.x:menu#categorias-clinicas-hospitais": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": []
+  },
+  "menu-item#idealclave-bellinha": {
+    "props": {
+      "id": "menu-principal",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/idealclave-bellinha/idealclave-bellinha-5l",
+        "noFollow": false,
+        "tagTitle": "Idealclave Bellinha",
+        "text": "Idealclave Bellinha"
+      },
+      "blockClass": "menu-superior"
+    }
+  },
+  "menu-item#mobiliario-tecnico": {
+    "props": {
+      "id": "menu-principal",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/idealovers-by--mad-u",
+        "noFollow": false,
+        "tagTitle": "Idealovers by MAD.U",
+        "text": "Idealovers by MAD.U"
+      },
+      "blockClass": "menu-superior"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#categorias-mobiliario-tecnico"
+    ]
+  },
+  "vtex.menu@2.x:submenu#categorias-mobiliario-tecnico": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categorias-mobiliario-tecnico"
+    ]
+  },
+  "vtex.menu@2.x:menu#categorias-mobiliario-tecnico": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#submenuMobiliarioTecnico-mob-madu-extra",
+      "menu-item#submenuMobiliarioTecnico-mob-madu-one",
+      "menu-item#submenuMobiliarioTecnico-acessorios"
+    ]
+  },
+  "menu-item#submenuMobiliarioTecnico-mob-madu-extra": {
+    "props": {
+      "id": "menu-item-submenuMobiliarioTecnico",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/idealovers-by--mad-u/mad-u-extra",
+        "noFollow": false,
+        "tagTitle": "Mad.u Extra",
+        "text": "MAD.U EXTRA"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuMobiliarioTecnico-mob-madu-one": {
+    "props": {
+      "id": "menu-item-submenuMobiliarioTecnico",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/idealovers-by--mad-u/mad-u-box",
+        "noFollow": false,
+        "tagTitle": "MAD.U BOX",
+        "text": "MAD.U BOX"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "menu-item#submenuMobiliarioTecnico-acessorios": {
+    "props": {
+      "id": "menu-item-submenuMobiliarioTecnico",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/idealovers-by--mad-u/acessorios",
+        "noFollow": false,
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
+      },
+      "blockClass": "menu-dropdown"
+    }
+  },
+  "vtex.menu@2.x:menu#category-menu-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "experimentalOptimizeRendering": true,
+      "blockClass": "menu-principal-mobile"
+    },
+    "children": [
+      "menu-item#ver-tudo-mobile",
+      "menu-item#pronta-entrega-mobile",
+      "menu-item#mobiliario-tecnico-mobile",
+      "menu-item#idealclave-bellinha-mobile",
+      "menu-item#clinicas-hospitais-mobile",
+      "menu-item#beleza-estetica-mobile",
+      "menu-item#odontologia-mobile",
+      "menu-item#linha-veterinaria-mobile",
+      "menu-item#manuais-mobile"
+    ]
+  },
+  "menu-item#ver-tudo-mobile": {
+    "props": {
+      "id": "menu-item-ver-tudo-mobile",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Ver tudo",
+        "text": "Ver tudo"
+      },
+      "blockClass": "menu-superior-mobile"
+    },
+    "blocks": [
+      "submenu.accordion#categorias-ver-tudo"
+    ]
+  },
+  "submenu.accordion#categorias-ver-tudo": {
+    "props": {
+      "width": "100%",
+      "blockClass": "ver-tudo-mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categorias-ver-tudo-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#categorias-ver-tudo-mobile": {
+    "children": [
+      "flex-layout.col#ver-tudo-mobile"
+    ]
+  },
+  "flex-layout.col#ver-tudo-mobile": {
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "menu-item#submenuVerTudo-acessorios-ester",
+      "menu-item#submenuVerTudo-beleza-estetica",
+      "menu-item#submenuVerTudo-odontologia",
+      "menu-item#submenuVerTudo-linha-veterinaria",
+      "menu-item#submenuVerTudo-clinicas-hospitais"
+    ]
+  },
+  "menu-item#pronta-entrega-mobile": {
+    "props": {
+      "id": "menu-principal-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pronta-entrega",
+        "noFollow": false,
+        "tagTitle": "Pronta Entrega",
+        "text": "Pronta Entrega"
+      },
+      "blockClass": "menu-superior-mobile"
+    }
+  },
+  "menu-item#beleza-estetica-mobile": {
+    "props": {
+      "id": "menu-principal-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/beleza-e-estetica",
+        "noFollow": false,
+        "tagTitle": "Beleza e Estética",
+        "text": "Beleza e Estética"
+      },
+      "blockClass": "menu-superior-mobile"
+    },
+    "blocks": [
+      "submenu.accordion#categorias-beleza-estetica"
+    ]
+  },
+  "submenu.accordion#categorias-beleza-estetica": {
+    "props": {
+      "width": "100%",
+      "blockClass": "beleza-estetica-mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categorias-beleza-estetica-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#categorias-beleza-estetica-mobile": {
+    "children": [
+      "flex-layout.col#beleza-estetica-mobile"
+    ]
+  },
+  "flex-layout.col#beleza-estetica-mobile": {
+    "children": [
+      "menu-item#submenuBelezaEstetica-autoclaves-home-care",
+      "menu-item#submenuBelezaEstetica-autoclaves-manicure",
+      "menu-item#submenuBelezaEstetica-autoclaves-podologia",
+      "menu-item#submenuBelezaEstetica-autoclaves-salao-beleza"
+    ]
+  },
+  "menu-item#odontologia-mobile": {
+    "props": {
+      "id": "menu-principal-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/odontologia",
+        "noFollow": false,
+        "tagTitle": "Odontologia",
+        "text": "Odontologia"
+      },
+      "blockClass": "menu-superior-mobile"
+    },
+    "blocks": [
+      "submenu.accordion#categorias-odontologia"
+    ]
+  },
+  "submenu.accordion#categorias-odontologia": {
+    "props": {
+      "width": "100%",
+      "blockClass": "odontologia-mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categorias-odontologia-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#categorias-odontologia-mobile": {
+    "children": [
+      "flex-layout.col#odontologia-mobile"
+    ]
+  },
+  "flex-layout.col#odontologia-mobile": {
+    "children": [
+      "menu-item#submenuOdontologia-autoclaves-odontologia"
+    ]
+  },
+  "menu-item#linha-veterinaria-mobile": {
+    "props": {
+      "id": "menu-principal-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/veterinaria",
+        "noFollow": false,
+        "tagTitle": "Linha Veterinária",
+        "text": "Linha Veterinária"
+      },
+      "blockClass": "menu-superior-mobile"
+    },
+    "blocks": [
+      "submenu.accordion#categorias-veterinaria"
+    ]
+  },
+  "submenu.accordion#categorias-veterinaria": {
+    "props": {
+      "width": "100%",
+      "blockClass": "veterinaria-mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categorias-veterinaria-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#categorias-veterinaria-mobile": {
+    "children": [
+      "flex-layout.col#veterinaria-mobile"
+    ]
+  },
+  "flex-layout.col#veterinaria-mobile": {
+    "children": [
+      "menu-item#submenuVeterinaria-autoclaves-veterinaria"
+    ]
+  },
+  "menu-item#clinicas-hospitais-mobile": {
+    "props": {
+      "id": "menu-principal-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clinicas-e-hospitais",
+        "noFollow": false,
+        "tagTitle": "Clínicas e Hospitais",
+        "text": "Clínicas e Hospitais"
+      },
+      "blockClass": "menu-superior-mobile"
+    }
+  },
+  "menu-item#manuais-mobile": {
+    "props": {
+      "id": "menu-principal-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ajuda/manuais-idealine",
+        "noFollow": false,
+        "tagTitle": "Manuais",
+        "text": "Manuais"
+      },
+      "blockClass": "menu-superior-mobile"
+    }
+  },
+  "menu-item#idealclave-bellinha-mobile": {
+    "props": {
+      "id": "menu-principal-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/idealclave-bellinha/idealclave-bellinha-5l",
+        "noFollow": false,
+        "tagTitle": "Idealclave Bellinha",
+        "text": "Idealclave Bellinha"
+      },
+      "blockClass": "menu-superior-mobile"
+    }
+  },
+  "menu-item#mobiliario-tecnico-mobile": {
+    "props": {
+      "id": "menu-principal-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/idealovers-by--mad-u",
+        "noFollow": false,
+        "tagTitle": "Idealovers by MAD.U",
+        "text": "Idealovers by MAD.U"
+      },
+      "blockClass": "menu-superior-mobile"
+    },
+    "blocks": [
+      "submenu.accordion#categorias-mobiliario-tecnico"
+    ]
+  },
+  "submenu.accordion#categorias-mobiliario-tecnico": {
+    "props": {
+      "width": "100%",
+      "blockClass": "mobiliario-tecnico-mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu##categorias-mobiliario-tecnico-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu##categorias-mobiliario-tecnico-mobile": {
+    "children": [
+      "flex-layout.col#mobiliario-tecnico-mobile"
+    ]
+  },
+  "flex-layout.col#mobiliario-tecnico-mobile": {
+    "children": [
+      "menu-item#submenuMobiliarioTecnico-mob-madu-extra",
+      "menu-item#submenuMobiliarioTecnico-mob-madu-one",
+      "menu-item#submenuMobiliarioTecnico-acessorios"
+    ]
+  }
+}

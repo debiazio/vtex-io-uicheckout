@@ -1,0 +1,1195 @@
+{
+  "store.home": {
+    "blocks": [
+      // "responsive-layout.desktop#video-banner-home",
+      // "responsive-layout.mobile#banner-topo-mobile",
+      "list-context.image-list#home",
+      "flex-layout.row#script_rd",
+      "flex-layout.row#deals",
+      "sandbox#cookie-script",
+      "responsive-layout.mobile#categorias",
+      "responsive-layout.mobile#banners-mobile",
+      "responsive-layout.desktop#categorias",
+      "flex-layout.row#big_banners",
+      "flex-layout.row#mini-banners",
+      "__fold__",
+      "responsive-layout.desktop#carrossel-5l-8l",
+      "rich-text#prateleira-maior-capacidade",
+      "flex-layout.row#shelf2",
+      "rich-text#prateleira-madu",
+      "flex-layout.row#shelf3",
+      "flex-layout.row#conteudo-instagram",
+      "flex-layout.row#titulo-blog-home",
+      "flex-layout.row#blog-home"
+    ]
+  },
+  "sandbox#cookie-script":{
+    "props": {
+      "initialContent": "<script type='text/javascript' charset='UPeadfa3f040b66.js'></script>",
+      "allowCookies": true
+    }
+  },
+
+  "list-context.image-list#home": {
+    "children": [
+      "slider-layout#demo-images"
+    ],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/Banner DESKTOP sweet pink.webp",
+          "mobileImage": "assets/Banner MOBILE sweet pink.webp"
+        },
+        {
+          "image": "assets/Banner DESKTOP sweet black.webp",
+          "mobileImage": "assets/Banner MOBILE sweet black.webp"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  // "slider-layout#video-banner-home": {
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "desktop": 1,
+  //       "tablet": 1,
+  //       "phone": 1
+  //     },
+  //     "infinite": true,
+  //     "showNavigationArrows": "desktopOnly",
+  //     "blockClass": "video-banner-slider",
+  //     "fullWidth": true,
+  //     "showPaginationDots": "always",
+  //     "autoplay": {
+  //       "timeout": 5000
+  //     }
+  //   },
+  //   "children": [
+  //     "link#frete-gratis",
+  //     "link#mes-consumidor-esmalteira",
+  //     "link#imagem-banner-terceiro"
+  //   ]
+  // },
+  // "link#frete-gratis": {
+  //   "props": {
+  //     "href": "https://www.idealine.com.br/la%20belle?_q=la%20belle&map=ft",
+  //     "blockClass": "link-banner-home"
+  //   },
+  //   "children": [
+  //     "image#frete-gratis"
+  //   ]
+  // },
+  // "image#frete-gratis": {
+  //   "props": {
+  //     "src": "assets/Banner Desktop FRETE GRATIS.webp",
+  //     "blockClass": "imagem-banner-home"
+  //   }
+  // },
+  // "link#mes-consumidor-esmalteira": {
+  //   "props": {
+  //     "href": "/210?map=productClusterIds",
+  //     "blockClass": "link-banner-home"
+  //   },
+  //   "children": [
+  //     "image#mes-do-consumidor-image2"
+  //   ]
+  // },
+  // "image#mes-do-consumidor-image2": {
+  //   "props": {
+  //     "src": "assets/Banner Desktop compre e ganhe.webp"
+  //   }
+  // },
+  // "link#imagem-banner-terceiro": {
+  //   "props": {
+  //     "href": "/pronta-entrega",
+  //     "blockClass": "link-banner-home"
+  //   },
+  //   "children": [
+  //     "image#banner-terceiro"
+  //   ]
+  // },
+  // "image#banner-terceiro":{
+  //   "props": {
+  //     "src": "assets/Banner Desktop compre e ganhe.webp"
+  //   }
+  // },
+  // LAYOUT RESPONSIVEL MOBILE IMAGENS
+  // "responsive-layout.mobile#banner-topo-mobile": {
+  //   "children": [
+  //     "slider-layout#promocao-mes-consumidor-mobile"
+  //   ]
+  // },
+  // "slider-layout#promocao-mes-consumidor-mobile": {
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "phone": 1
+  //     },
+  //     "infinite": true,
+  //     "showNavigationArrows": "always",
+  //     "blockClass": "video-banner-slider",
+  //     "fullWidth": true,
+  //     "showPaginationDots": "always",
+  //     "autoplay": {
+  //       "timeout": 5000
+  //     }
+  //   },
+  //   "children": [
+  //     "link#frete-gratis-mobile",
+  //     "link#mes-consumidor-esmalteira-mobile",
+  //     "link#video-banner-novaprimeira-linha-mobile"
+  //   ]
+  // },
+  // "link#frete-gratis-mobile": {
+  //   "props": {
+  //     "href": "https://www.idealine.com.br/la%20belle?_q=la%20belle&map=ft",
+  //     "blockClass": "link-banner-home"
+  //   },
+  //   "children": [
+  //     "image#frete-gratis-mobile"
+  //   ]
+  // },
+  // "image#frete-gratis-mobile": {
+  //   "props": {
+  //     "src": "assets/Banner MOBILE FRETE GRATIS.webp",
+  //     "blockClass": "imagem-banner-home"
+  //   }
+  // },
+  // "link#mes-consumidor-esmalteira-mobile": {
+  //   "props": {
+  //     "href": "/210?map=productClusterIds",
+  //     "blockClass": "link-banner-home"
+  //   },
+  //   "children": [
+  //     "image#mes-do-consumidor-image2-mobile"
+  //   ]
+  // },
+  // "image#mes-do-consumidor-image2-mobile": {
+  //   "props": {
+  //     "src": "assets/Banner MOBILE compre e ganhe.webp"
+  //   }
+  // },
+  // "link#video-banner-novaprimeira-linha-mobile": {
+  //   "props": {
+  //     "href": "/pronta-entrega"
+  //   },
+  //   "children": [
+  //     "image#banner-terceiro-mobile"
+  //   ]
+  // },
+  // "image#banner-terceiro-mobile": {
+  //   "props": {
+  //     "src": "assets/Banner MOBILE compre e ganhe.webp"
+  //   }
+  // },
+  // CARREGA O LINK HREF E O VIDEO - primeira linha
+  "responsive-layout.mobile#banners-mobile": {
+    "children": [
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf"
+    ]
+  },
+  "responsive-layout.desktop#carrossel-5l-8l": {
+    "children": [
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf"
+    ]
+  },
+  "flex-layout.row#script_rd": {
+    "props": {
+      "blockClass": "script_rd"
+    },
+    "children": [
+      "scriptrd" // script do RD
+    ]
+  },
+  //SECAO COMPRE POR CATEGORIA -MOBILE
+  "responsive-layout.mobile#categorias": {
+    "children": [
+      "flex-layout.row#compre-categorias-mobile"
+    ]
+  },
+  "flex-layout.row#compre-categorias-mobile": {
+    "props": {
+      "blockClass": "container-compre-por-categoria-mobile",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#titulo-categorias-linha1",
+      "flex-layout.row#imagens-categorias-mobile"
+    ]
+  },
+  "flex-layout.row#imagens-categorias-mobile": {
+    "props": {
+      "blockClass": "container-imagens-secao-categorias-mobile"
+    },
+    "children": [
+      "flex-layout.row#linha-1-cat-mobile",
+      "flex-layout.row#linha-2-cat-mobile",
+      "flex-layout.row#titulo-categorias-linha2",
+      "flex-layout.row#linha-3-cat-mobile",
+      "flex-layout.row#linha-4-cat-mobile"
+    ]
+  },
+  "flex-layout.row#linha-1-cat-mobile": {
+    "props": {
+      "blockClass": "linhas-categorias-mobile"
+    },
+    "children": [
+      "flex-layout.col#categoria-nails",
+      "flex-layout.col#categorias-lashes"
+    ]
+  },
+  "flex-layout.row#linha-2-cat-mobile": {
+    "props": {
+      "blockClass": "linhas-categorias-mobile"
+    },
+    "children": [
+      "flex-layout.col#categorias-podologia",
+      "flex-layout.col#categorias-bodyPiercings"
+    ]
+  },
+  "flex-layout.row#linha-3-cat-mobile": {
+    "props": {
+      "blockClass": "linhas-categorias-mobile"
+    },
+    "children": [
+      "flex-layout.col#categorias-odontologia",
+      "flex-layout.col#categorias-veterinaria"
+    ]
+  },
+  "flex-layout.row#linha-4-cat-mobile": {
+    "props": {
+      "blockClass": "linhas-categorias-mobile"
+    },
+    "children": [
+      "flex-layout.col#categorias-laboratorio",
+      "flex-layout.col#categorias-cli-hosp"
+    ]
+  },
+  //SECAO COMPRE POR CATEGORIA - DESKTOP
+  "responsive-layout.desktop#categorias": {
+    "children": [
+      "flex-layout.row#compre-por-categoria"
+    ]
+  },
+  "flex-layout.row#compre-por-categoria": {
+    "props": {
+      "blockClass": "container-compre-por-categoria",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#titulo-categorias-linha1",
+      "flex-layout.row#imagens-categorias",
+      "flex-layout.row#titulo-categorias-linha2",
+      "flex-layout.row#imagens-segunda-linha-categorias"
+    ]
+  },
+  //conteiner do titulo das categorias
+  "flex-layout.row#titulo-categorias-linha1": {
+    "props": {
+      "blockClass": "conteiner-titulo-categorias"
+    },
+    "children": [
+      "rich-text#titulo",
+      "rich-text#subtitulo-categorias"
+    ]
+  },
+  //titulo das categorias
+  "rich-text#titulo": {
+    "props": {
+      "text": "COMPRE POR CATEGORIA",
+      "blockClass": "texto-titulo-categoria"
+    }
+  },
+  //subtitulo das categorias
+  "rich-text#subtitulo-categorias": {
+    "props": {
+      "text": "Beleza & Estética",
+      "blockClass": "texto-subtitulo-categoria"
+    }
+  },
+  //imagens das categorias - linha 1 - desktop
+  "flex-layout.row#imagens-categorias": {
+    "props": {
+      "blockClass": "conteiner-imagens-secao-categorias"
+    },
+    "children": [
+      "flex-layout.col#categoria-nails",
+      "flex-layout.col#categorias-lashes",
+      "flex-layout.col#categorias-podologia",
+      "flex-layout.col#categorias-bodyPiercings"
+    ]
+  },
+  "flex-layout.row#titulo-categorias-linha2": {
+    "props": {
+      "blockClass": "conteiner-titulo-categorias"
+    },
+    "children": [
+      "rich-text#titulo"
+    ]
+  },
+  //coluna das imagens
+  "flex-layout.col#categoria-nails": {
+    "props": {
+      "blockClass": "categoria-imagens"
+    },
+    "children": [
+      "link#link-categoria-nails"
+    ]
+  },
+  "link#link-categoria-nails": {
+    "props": {
+      "href": "/beleza-e-estetica/autoclaves-para-manicure"
+    },
+    "children": [
+      "flex-layout.row#categorias-quadro-nails"
+    ]
+  },
+  "flex-layout.row#categorias-quadro-nails": {
+    "props": {
+      "blockClass": "linha-imagem-e-label"
+    },
+    "children": [
+      "image#categorias-nails",
+      "rich-text#label-cat-nails"
+    ]
+  },
+  // imagens de capa categorias
+  "image#categorias-nails": {
+    "props": {
+      "blockClass": "imagem-categorias",
+      "src": "assets/manicure.webp",
+      "alt": "Manicure",
+      "title": "Categoria Imagem de manicure",
+      "link": {
+        "url": "/beleza-e-estetica/autoclaves-para-manicure"
+      }
+    }
+  },
+  //label da categoria
+  "rich-text#label-cat-nails": {
+    "props": {
+      "text": "Nails Designer Manicure",
+      "blockClass": [
+        "label-categorias",
+        "categorias-palavra-grande"
+      ]
+    }
+  },
+  //coluna das imagens
+  "flex-layout.col#categorias-lashes": {
+    "props": {
+      "blockClass": "categoria-imagens"
+    },
+    "children": [
+      "link#link-categoria-lashes"
+    ]
+  },
+  "link#link-categoria-lashes": {
+    "props": {
+      "href": "/beleza-e-estetica/autoclaves-para-lash-designer"
+    },
+    "children": [
+      "flex-layout.row#categorias-quadro-lashes"
+    ]
+  },
+  "flex-layout.row#categorias-quadro-lashes": {
+    "props": {
+      "blockClass": "linha-imagem-e-label"
+    },
+    "children": [
+      "image#categorias-lashes",
+      "rich-text#label-cat-lashes"
+    ]
+  },
+  // imagens de capa categorias
+  "image#categorias-lashes": {
+    "props": {
+      "blockClass": "imagem-categorias",
+      "src": "assets/lasher.webp",
+      "alt": "lash designer",
+      "title": "Categoria Lash Designer",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  //label das categorias
+  "rich-text#label-cat-lashes": {
+    "props": {
+      "text": "Lash Designer",
+      "blockClass": "label-categorias"
+    }
+  },
+  //coluna das imagens
+  "flex-layout.col#categorias-podologia": {
+    "props": {
+      "blockClass": "categoria-imagens"
+    },
+    "children": [
+      "link#link-categoria-podologia"
+    ]
+  },
+  "link#link-categoria-podologia": {
+    "props": {
+      "href": "/beleza-e-estetica/autoclaves-para-podologia"
+    },
+    "children": [
+      "flex-layout.row#categorias-quadro-podologia"
+    ]
+  },
+  "flex-layout.row#categorias-quadro-podologia": {
+    "props": {
+      "blockClass": "linha-imagem-e-label"
+    },
+    "children": [
+      "image#categorias-podologia",
+      "rich-text#label-cat-podologia"
+    ]
+  },
+  // imagens de capa categorias
+  "image#categorias-podologia": {
+    "props": {
+      "blockClass": "imagem-categorias",
+      "src": "assets/podologia.webp",
+      "alt": "Podologia",
+      "title": "Categoria Podologia",
+      "link": {
+        "url": "/beleza-e-estetica/autoclaves-para-podologia"
+      }
+    }
+  },
+  //label das categorias
+  "rich-text#label-cat-podologia": {
+    "props": {
+      "text": "Podologia",
+      "blockClass": "label-categorias"
+    }
+  },
+  //coluna das imagens
+  "flex-layout.col#categorias-bodyPiercings": {
+    "props": {
+      "blockClass": "categoria-imagens"
+    },
+    "children": [
+      "link#link-categoria-bodyPiercings"
+    ]
+  },
+  "link#link-categoria-bodyPiercings": {
+    "props": {
+      "href": "/beleza-e-estetica/autoclaves-para-body-piercing"
+    },
+    "children": [
+      "flex-layout.row#categorias-quadro-bodyPiercings"
+    ]
+  },
+  "flex-layout.row#categorias-quadro-bodyPiercings": {
+    "props": {
+      "blockClass": "linha-imagem-e-label"
+    },
+    "children": [
+      "image#categorias-bodyPiercings",
+      "rich-text#label-cat-bodypiercings"
+    ]
+  },
+  // imagens de capa categorias
+  "image#categorias-bodyPiercings": {
+    "props": {
+      "blockClass": "imagem-categorias",
+      "src": "assets/body_piercing.webp",
+      "alt": "BodyPiercing",
+      "title": "Categoria Body Piercer",
+      "link": {
+        "url": "/beleza-e-estetica/autoclaves-para-body-piercing"
+      }
+    }
+  },
+  "rich-text#label-cat-bodypiercings": {
+    "props": {
+      "text": "Body Piercer",
+      "blockClass": "label-categorias"
+    }
+  },
+  //secao linha 2 - categorias - desktop
+  "flex-layout.row#imagens-segunda-linha-categorias": {
+    "props": {
+      "blockClass": "conteiner-imagens-secao-categorias",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#categorias-odontologia",
+      "flex-layout.col#categorias-veterinaria",
+      "flex-layout.col#categorias-laboratorio",
+      "flex-layout.col#categorias-cli-hosp"
+    ]
+  },
+  //link para a categoria
+  "flex-layout.col#categorias-odontologia": {
+    "props": {
+      "blockClass": "categoria-imagens"
+    },
+    "children": [
+      "link#link-categoria-odontologia"
+    ]
+  },
+  "link#link-categoria-odontologia": {
+    "props": {
+      "href": "/odontologia/autoclaves-para-odontologia"
+    },
+    "children": [
+      "flex-layout.row#categorias-quadro-odontologia"
+    ]
+  },
+  "flex-layout.row#categorias-quadro-odontologia": {
+    "props": {
+      "blockClass": "linha-imagem-e-label"
+    },
+    "children": [
+      "image#categorias-odontologia",
+      "rich-text#label-cat-odontologia"
+    ]
+  },
+  // imagens de capa categorias
+  "image#categorias-odontologia": {
+    "props": {
+      "blockClass": "imagem-categorias",
+      "src": "assets/odontologia.webp",
+      "alt": "Odontologia",
+      "title": "Categoria Odontologia",
+      "link": {
+        "url": "/odontologia/autoclaves-para-odontologia"
+      }
+    }
+  },
+  //label categoria
+  "rich-text#label-cat-odontologia": {
+    "props": {
+      "text": "Odontologia",
+      "blockClass": "label-categorias"
+    }
+  },
+  //coluna imagens
+  "flex-layout.col#categorias-veterinaria": {
+    "props": {
+      "blockClass": "categoria-imagens"
+    },
+    "children": [
+      "link#link-categoria-veterinaria"
+    ]
+  },
+  "link#link-categoria-veterinaria": {
+    "props": {
+      "href": "/veterinaria/autoclaves-para-veterinaria"
+    },
+    "children": [
+      "flex-layout.row#categorias-quadro-veterinaria"
+    ]
+  },
+  "flex-layout.row#categorias-quadro-veterinaria": {
+    "props": {
+      "blockClass": "linha-imagem-e-label"
+    },
+    "children": [
+      "image#categorias-veterinaria",
+      "rich-text#label-cat-veterinaria"
+    ]
+  },
+  "image#categorias-veterinaria": {
+    "props": {
+      "blockClass": "imagem-categorias",
+      "src": "assets/veterinario.webp",
+      "alt": "Veterinaria",
+      "title": "Categoria Veterinária",
+      "link": {
+        "url": "/veterinaria/autoclaves-para-veterinaria"
+      }
+    }
+  },
+  "rich-text#label-cat-veterinaria": {
+    "props": {
+      "text": "Veterinária",
+      "blockClass": "label-categorias"
+    }
+  },
+  //coluna imagens
+  "flex-layout.col#categorias-laboratorio": {
+    "props": {
+      "blockClass": "categoria-imagens"
+    },
+    "children": [
+      "link#link-categoria-laboratorio"
+    ]
+  },
+  "link#link-categoria-laboratorio": {
+    "props": {
+      "href": "/clinicas-e-hospitais/autoclaves-para-laboratorio"
+    },
+    "children": [
+      "flex-layout.row#categorias-quadro-laboratorio"
+    ]
+  },
+  "flex-layout.row#categorias-quadro-laboratorio": {
+    "props": {
+      "blockClass": "linha-imagem-e-label"
+    },
+    "children": [
+      "image#categorias-laboratorio",
+      "rich-text#label-cat-laboratorio"
+    ]
+  },
+  "image#categorias-laboratorio": {
+    "props": {
+      "blockClass": "imagem-categorias",
+      "src": "assets/laboratorio.webp",
+      "alt": "Laboratorio",
+      "title": "Categoria Laboratório",
+      "link": {
+        "url": "/clinicas-e-hospitais/autoclaves-para-laboratorio"
+      }
+    }
+  },
+  "rich-text#label-cat-laboratorio": {
+    "props": {
+      "text": "Laboratório",
+      "blockClass": "label-categorias"
+    }
+  },
+  // coluna imagens
+  "flex-layout.col#categorias-cli-hosp": {
+    "props": {
+      "blockClass": "categoria-imagens"
+    },
+    "children": [
+      "link#link-categoria-cli-hosp"
+    ]
+  },
+  "link#link-categoria-cli-hosp": {
+    "props": {
+      "href": "/clinicas-e-hospitais/"
+    },
+    "children": [
+      "flex-layout.row#categorias-quadro-cli-hosp"
+    ]
+  },
+  "flex-layout.row#categorias-quadro-cli-hosp": {
+    "props": {
+      "blockClass": "linha-imagem-e-label"
+    },
+    "children": [
+      "image#categorias-cli-hosp",
+      "rich-text#label-cat-cli-hosp"
+    ]
+  },
+  "image#categorias-cli-hosp": {
+    "props": {
+      "blockClass": "imagem-categorias",
+      "src": "assets/cli-hosp.webp",
+      "alt": "Clinicas-hospitais",
+      "title": "Categoria Clínicas e hospitais",
+      "link": {
+        "url": "/clinicas-e-hospitais/"
+      }
+    }
+  },
+  "rich-text#label-cat-cli-hosp": {
+    "props": {
+      "text": "Clínicas e Hospitais",
+      "blockClass": [
+        "label-categorias",
+        "categorias-palavra-grande"
+      ]
+    }
+  },
+  // SECAO DOS MINI BANNERS
+  "flex-layout.row#big_banners": {
+    "props": {
+      "blockClass": "section-big-banners"
+    },
+    "children": [
+      "image#big-banner-esquerda-image1",
+      "image#big-banner-direita"
+    ]
+  },
+  // LINHA MAIS ALTA DA SECAO DE big BANNERS
+  "image#big-banner-esquerda-image1": {
+    "props": {
+      "blockClass": "imagens-big-banners",
+      "src": "assets/Mini-banner---registro-e-certificacao.webp",
+      "alt": "Líder no mercado de biossegurança"
+    }
+  },
+  "image#big-banner-direita": {
+    "props": {
+      "blockClass": "imagens-big-banners",
+      "src": "assets/Mini-banner---segmentos.webp",
+      "alt": "Parcelamento em até 10x sem juros"
+    }
+  },
+  // LINHA MENOR DA SECAO DE MINI BANNERS
+  "flex-layout.row#mini-banners": {
+    "props": {
+      "blockClass": "section-mini-banners"
+    },
+    "children": [
+      "image#mini-banner-linha2-image1",
+      "image#mini-banner-linha2-image2",
+      "image#mini-banner-linha2-image3"
+    ]
+  },
+  "image#mini-banner-linha2-image1": {
+    "props": {
+      "blockClass": "imagens-menores-mini-banners",
+      "src": "assets/small-banner---opcoes-de-entrega.webp",
+      "alt": "Loja oficial da fábrica"
+    }
+  },
+  "image#mini-banner-linha2-image2": {
+    "props": {
+      "blockClass": "imagens-menores-mini-banners",
+      "src": "assets/Small-banner---compra-segura.webp",
+      "alt": "Compra segura com nota fiscal original"
+    }
+  },
+  "image#mini-banner-linha2-image3": {
+    "props": {
+      "blockClass": "imagens-menores-mini-banners",
+      "src": "assets/Small-banner---tempo-e-dindin.webp",
+      "alt": "Diversas opções de pagamento"
+    }
+  },
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## **AUTOCLAVES DE 5 E 8 LITROS**",
+      "blockClass": "shelfTitle"
+    }
+  },
+  // prateleira de 8 litros
+  "flex-layout.row#shelf": {
+    "children": [
+      "list-context.product-list#prateleira-8litros"
+    ]
+  },
+  "list-context.product-list#prateleira-8litros": {
+    "blocks": [
+      // "product-summary.shelf"
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#prateleira-8litros"
+    ],
+    "props": {
+      "collection": "210",
+      "orderBy": "OrderByReleaseDateDESC",
+      "maxItems": 50
+    },
+    "title": "Prateleira 5 e 8 litros"
+  },
+  "slider-layout#prateleira-8litros": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showNavigationArrows": "desktopOnly"
+    }
+  },
+  "flex-layout.row#shelf2": {
+    "children": [
+      "list-context.product-list#prateleira-maior-capacidade"
+    ]
+  },
+  // linha da prateleira de maior capacidade
+  "rich-text#prateleira-maior-capacidade": {
+    "props": {
+      "text": "## **AUTOCLAVES HORIZONTAIS**",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "list-context.product-list#prateleira-maior-capacidade": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#prateleira-maior-capacidade"
+    ],
+    "props": {
+      "orderBy": "OrderByPriceASC",
+      "collection": "208",
+      "maxItems": 40
+    }
+  },
+  "slider-layout#prateleira-maior-capacidade": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "blockClass": "shelf",
+      "showNavigationArrows": "always"
+    }
+  },
+  "flex-layout.row#shelf3": {
+    "children": [
+      "list-context.product-list#prateleira-madu"
+    ]
+  },
+  // linha da prateleira de maior capacidade
+  "rich-text#prateleira-madu": {
+    "props": {
+      "text": "## **IDEALOVERS BY MAD.U**",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "list-context.product-list#prateleira-madu": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#prateleira-madu"
+    ],
+    "props": {
+      "blockClass": "shelf",
+      "orderBy": "OrderByBestDiscountDESC",
+      "category": "80"
+    }
+  },
+  "slider-layout#prateleira-madu": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showNavigationArrows": "desktopOnly"
+    }
+  },
+  "flex-layout.row#conteudo-instagram": {
+    "props": {
+      "blockClass": "linha-instagram",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.row#titulo-instagram",
+      "flex-layout.row#postagens-instagram"
+    ]
+  },
+  "flex-layout.row#titulo-instagram": {
+    "props": {
+      "blockClass": "linha-instagram"
+    },
+    "children": [
+      "rich-text#titulo-instagram"
+    ]
+  },
+  "rich-text#titulo-instagram": {
+    "props": {
+      "text": "## SIGA NOSSO INSTAGRAM ##",
+      "blockClass": "titulo-instagram"
+    }
+  },
+  // slider instagram
+  "flex-layout.row#postagens-instagram": {
+    "props": {
+      "blockClass": "linha-instagram"
+    },
+    "children": [
+      "slider-layout#instagram-home"
+    ]
+  },
+  "slider-layout#instagram-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 1,
+        "phone": 2
+      },
+      "infinite": true,
+      "blockClass": "video-banner-slider",
+      "fullWidth": true,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "autoplay": {
+        "timeout": 3000
+      }
+    },
+    "children": [
+      // LIMITEI A 10
+      "link#site-seguro",
+      "link#frete-zero",
+      "link#sweet-black",
+      "link#feira",
+      "link#sweet-pink",
+      "link#promocional-evento",
+      // "link#poucas-unidades",
+      "link#beauty",
+      "link#elas-chegaram",
+      "link#live-lancamento",
+      "link#novos-lancamentos",
+      "link#contagem-regressiva"
+    ]
+  },
+  // ICONES DO INSTAGRAM - MODELO
+  "image#links-instagram": {
+    "props": {
+      "src": "assets/icones_instagram.svg",
+      "blockClass": "icones-instagram"
+    }
+  },
+  // SITE SEGURO
+  "link#site-seguro": {
+    "props": {
+      "href": "https://www.instagram.com/idealine_autoclaves/p/DLXjg5CRoTp/?img_index=1",
+      "blockClass": "link-banner-home",
+      "target": "_blank"
+    },
+    "children": [
+      "image#site-seguro-instagram",
+      "image#links-instagram"
+    ]
+  },
+  "image#site-seguro-instagram": {
+    "props": {
+      "src": "assets/site-seguro.webp",
+      "blockClass": "imagem-instagram"
+    }
+  },
+  // LINK FRETE ZERO
+  "link#frete-zero": {
+    "props": {
+      "href": "https://www.instagram.com/p/DLIFQfkxy6H/",
+      "blockClass": "link-banner-home",
+      "target": "_blank"
+    },
+    "children": [
+      "image#frete-zero",
+      "image#links-instagram"
+    ]
+  },
+  "image#frete-zero": {
+    "props": {
+      "src": "assets/frete-zero.webp",
+      "blockClass": "imagem-instagram"
+    }
+  },
+  // SWEET BLACK
+  "link#sweet-black": {
+    "props": {
+      "href": "https://www.instagram.com/p/DLCwC-nRjeO/",
+      "blockClass": "link-banner-home",
+      "target": "_blank"
+    },
+    "children": [
+      "image#sweet-black",
+      "image#links-instagram"
+    ]
+  },
+  "image#sweet-black": {
+    "props": {
+      "src": "assets/sweet-black.webp",
+      "blockClass": "imagem-instagram"
+    }
+  },
+  // LINK FEIRA
+  "link#feira": {
+    "props": {
+      "href": "https://www.instagram.com/p/DK15PfGRMsZ/",
+      "blockClass": "link-banner-home",
+      "target": "_blank"
+    },
+    "children": [
+      "image#feira",
+      "image#links-instagram"
+    ]
+  },
+  "image#feira": {
+    "props": {
+      "src": "assets/feira.webp",
+      "blockClass": "imagem-instagram"
+    }
+  },
+  // INSTAGRAM 1
+  "link#sweet-pink": {
+    "props": {
+      "href": "https://www.instagram.com/p/DKZkIOjtm_E/",
+      "blockClass": "link-banner-home",
+      "target": "_blank"
+    },
+    "children": [
+      "image#sweet-pink",
+      "image#links-instagram"
+    ]
+  },
+  "image#sweet-pink": {
+    "props": {
+      "src": "assets/sweet-pink.webp",
+      "blockClass": "imagem-instagram"
+    }
+  },
+  // INSTAGRAM 2
+  "link#promocional-evento": {
+    "props": {
+      "href": "https://www.instagram.com/p/DKIIWaox2SE/",
+      "blockClass": "link-banner-home",
+      "target": "_blank"
+    },
+    "children": [
+      "image#promocional-evento",
+      "image#links-instagram"
+    ]
+  },
+  "image#promocional-evento": {
+    "props": {
+      "src": "assets/instagram-2.webp",
+      "blockClass": "imagem-instagram"
+    }
+  },
+
+  // INSTAGRAM 4
+  "link#beauty": {
+    "props": {
+      "href": "https://www.instagram.com/p/DKFIrA-N_99/",
+      "blockClass": "link-banner-home",
+      "target": "_blank"
+    },
+    "children": [
+      "image#beauty",
+      "image#links-instagram"
+    ]
+  },
+  "image#beauty": {
+    "props": {
+      "src": "assets/instagram-4.webp",
+      "blockClass": "imagem-instagram"
+    }
+  },
+  // INSTAGRAM 5
+  "link#elas-chegaram": {
+    "props": {
+      "href": "https://www.instagram.com/p/DKCiwaOtWwf/",
+      "blockClass": "link-banner-home",
+      "target": "_blank"
+    },
+    "children": [
+      "image#elas-chegaram",
+      "image#links-instagram"
+    ]
+  },
+  "image#elas-chegaram": {
+    "props": {
+      "src": "assets/instagram-5.webp",
+      "blockClass": "imagem-instagram"
+    }
+  },
+  // INSTAGRAM 6
+  "link#live-lancamento": {
+    "props": {
+      "href": "https://www.instagram.com/p/DKCnnZVNhYj/",
+      "blockClass": "link-banner-home",
+      "target": "_blank"
+    },
+    "children": [
+      "image#live-lancamento",
+      "image#links-instagram"
+    ]
+  },
+  "image#live-lancamento": {
+    "props": {
+      "src": "assets/instagram-6.webp",
+      "blockClass": "imagem-instagram"
+    }
+  },
+  // INSTAGRAM 7
+  "link#novos-lancamentos": {
+    "props": {
+      "href": "https://www.instagram.com/p/DKAnIhit5fj/",
+      "blockClass": "link-banner-home",
+      "target": "_blank"
+    },
+    "children": [
+      "image#novos-lancamentos",
+      "image#links-instagram"
+    ]
+  },
+  "image#novos-lancamentos": {
+    "props": {
+      "src": "assets/instagram-7.webp",
+      "blockClass": "imagem-instagram"
+    }
+  },
+  // INSTAGRAM 8
+  "link#contagem-regressiva": {
+    "props": {
+      "href": "https://www.instagram.com/p/DJ_57Q1t4EA/",
+      "blockClass": "link-banner-home",
+      "target": "_blank"
+    },
+    "children": [
+      "image#contagem-regressiva",
+      "image#links-instagram"
+    ]
+  },
+  "image#contagem-regressiva": {
+    "props": {
+      "src": "assets/instagram-8.webp",
+      "blockClass": "imagem-instagram"
+    }
+  },
+
+  // BLOGO
+  "flex-layout.row#titulo-blog-home": {
+    "props": {
+      "blockClass": "linha-blog"
+    },
+    "children": [
+      "rich-text#blog"
+    ]
+  },
+  "rich-text#blog": {
+    "props": {
+      "text": "## BLOG IDEALINE ##",
+      "blockClass": "titulo-idealine-blog"
+    }
+  },
+  "flex-layout.row#blog-home": {
+    "props": {
+      "blockClass": "linha-blog",
+      "fullWidth": true
+    },
+    "children": [
+      "blog-latest-posts-preview.wordpress-latest-posts-preview"
+    ]
+  },
+  "blog-latest-posts-preview.wordpress-latest-posts-preview": {
+    "props": {
+      "blockClass": "sessao-blog",
+      "useTextOverlays": false,
+      "showExcerpts": true,
+      "showDates": false,
+      "showCategories": false,
+      "absoluteLinks": true,
+      "numberOfPosts": 3
+    }
+  }
+}

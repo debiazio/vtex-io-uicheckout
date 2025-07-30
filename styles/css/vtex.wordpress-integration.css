@@ -1,0 +1,25 @@
+.latestPostsBlockContainer--sessao-blog {
+  margin: 20px 120px;
+}
+
+
+.teaserTitleLink--sessao-blog {
+  text-decoration: none;
+  color: var(--pink);
+  text-align: center;
+}
+
+.teaserTitleLink--sessao-blog:hover {
+  color: rgb(243, 41, 159);
+}
+
+.teaserTitle--sessao-blog {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .latestPostsBlockContainer--sessao-blog {
+    margin: 20px 20px;
+  }
+}

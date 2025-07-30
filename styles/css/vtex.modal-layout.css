@@ -1,0 +1,186 @@
+.closeButtonContainer--close-dia-consumidor{
+  position: absolute;
+}
+
+.modal--modal-banner-dia-consumidor-incubadora {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+
+
+@media screen and (min-width: 40em) {
+  .paper--quickview {
+    height: 260px;
+    width: 580px;
+  }
+
+  .actionsContainer--quickview {
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .paper--quickview {
+    height: 450px;
+    width: 900px;
+  }
+}
+
+
+@media screen and (min-width: 75em) {
+  .paper--quickview {
+    width: calc(100% - 4rem);
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 82em) {
+  .actionsContainer--quickview {
+    padding: 0 2.5rem 2.5rem 2.5rem;
+  }
+}
+
+.paper--quickview {
+  min-width: 320px;
+  max-width: 96rem;
+}
+
+.headerContainer--quickview {
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+.actionsContainer--quickview {
+  height: 100%;
+  width: 100%;
+  transition: box-shadow 150ms ease-in-out, border-top 150ms ease-in-out;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.726);
+}
+
+.actionsContentWrapper {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #aaa;
+  padding-top: 1.5rem;
+}
+
+.contentContainer--quickviewContent {
+  padding: 2.5rem 0 2.5rem 2rem;
+  overflow-x: hidden;
+}
+
+.triggerContainer--quickview {
+  padding: .75rem;
+}
+
+.triggerContainer {
+  outline: none;
+  background-color: black;
+}
+
+.actionsContainer--quickview:not(.actionsContainerEndOfContent--quickview) {
+  border-top-color: rgb(238, 238, 238);
+  box-shadow: -4px 0px 27px -12px rgba(0, 0, 0, 0.64);
+}
+
+.actionsContainer--quickview:not(.actionsContainerEndOfContent--quickview) .actionsContentWrapper {
+  border-top-color: transparent;
+}
+
+.closeButton {
+  padding-right: 1rem;
+}
+
+.paper--product-gifts {
+  padding: 1.5rem;
+}
+
+/* MODAL DE COOKIES  */
+.container--modal-cookies {
+  background-color: transparent;
+  /* backdrop-filter: blur(5px);  */
+}
+
+.paper--modal-cookies {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButton--botao-modal-cookies {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+
+/* MODAL DA ROLETA */
+.container--form-roleta{
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  box-shadow: #0000;
+}
+
+.paper--form-roleta {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  background-image: url('https://stermax.com.br/images_idealine/roleta_fundo.png');
+  background-size: cover; /* Faz com que a imagem cubra todo o elemento */
+  background-position: center; /* Centraliza a imagem no elemento */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+.closeButton--botao-fechar-roleta{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    color: white;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.closeButtonLabel--botao-fechar-roleta{
+  margin: 0;
+  padding: 0;
+}
+
+:global(.vtex-modal-layout-0-x-triggerContainer){
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .closeButton--botao-fechar-roleta {
+    right: 15px;
+  }
+
+  .paper--form-roleta {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .paper--form-roleta {
+    padding-bottom: 0;
+  }
+
+}

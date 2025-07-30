@@ -1,0 +1,32 @@
+.container {
+  max-width: 96rem;
+  /* padding-left: .5rem;
+  padding-right: .5rem; */
+}
+
+.inlineContainer {
+  margin-left: 0rem;
+  text-align: center;
+}
+
+.star--filled {
+  color: #FFB100;
+}
+
+.star--empty {
+  color: #FFB100;
+}
+
+.summaryButtonContainer :global(.vtex-button) {
+  margin: 10px;
+  padding: 5px;
+}
+
+.summaryButtonContainer :global(.vtex-button__label) {
+  font-size: 0.7rem;
+}
+
+
+.summaryContainer{
+  text-align: center;
+}
