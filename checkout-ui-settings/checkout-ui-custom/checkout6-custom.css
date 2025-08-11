@@ -116,45 +116,38 @@ body a {
   font-size: 25px !important;
 }
 
-.orderform-template-holder #payment-data a#payment-group-MercadoPagoProPaymentGroup.payment-group-item {
-  background-image: url("https://mfmgroup.vtexassets.com/assets/vtex.file-manager-graphql/images/2e12c9d2-d35c-4435-9e5a-fb5fc4770b1a___2edf2dbd08a23c25f478d06e99bb7ae2.png");
+.orderform-template-holder #payment-data a#payment-group-MercadoPagoProPaymentGroup.payment-group-item,
+.orderform-template-holder #payment-data a#payment-group-BoletoParceladoKoinPaymentGroup.payment-group-item,
+.orderform-template-holder #payment-data a#payment-group-creditCardPaymentGroup.payment-group-item,
+.orderform-template-holder #payment-data a#payment-group-bankInvoicePaymentGroup.payment-group-item,
+.orderform-template-holder #payment-data a#payment-group-instantPaymentPaymentGroup.payment-group-item {
   background-repeat: no-repeat;
   background-size: 50px;
   background-position-x: 99%;
   background-position-y: center;
+}
+
+
+.orderform-template-holder #payment-data a#payment-group-MercadoPagoProPaymentGroup.payment-group-item {
+  background-image: url("https://mfmgroup.vtexassets.com/assets/vtex.file-manager-graphql/images/2e12c9d2-d35c-4435-9e5a-fb5fc4770b1a___2edf2dbd08a23c25f478d06e99bb7ae2.png");
+
 }
 
 .orderform-template-holder #payment-data a#payment-group-BoletoParceladoKoinPaymentGroup.payment-group-item {
   background-image: url("https://mfmgroup.vtexassets.com/assets/vtex.file-manager-graphql/images/1773684c-5cb0-4de5-a512-7fb5b60af05f___015cd7e5b84dfe2a2d92e610e62bb417.png");
-  background-repeat: no-repeat;
-  background-size: 50px;
-  background-position-x: 99%;
-  background-position-y: center;
 }
 
 .orderform-template-holder #payment-data a#payment-group-creditCardPaymentGroup.payment-group-item {
   background-image: url("https://mfmgroup.vtexassets.com/assets/vtex.file-manager-graphql/images/f8863006-ea00-4965-9b4f-c24e6888851b___9aed9bd8f8c182951f0397109017d20e.png");
-  background-repeat: no-repeat;
-  background-size: 50px;
-  background-position-x: 99%;
-  background-position-y: center;
 }
 
 .orderform-template-holder #payment-data a#payment-group-bankInvoicePaymentGroup.payment-group-item {
   background-image: url("https://mfmgroup.vtexassets.com/assets/vtex.file-manager-graphql/images/ee5cce21-75bd-417a-bf70-ac2e280c7b8f___fa632f6f20e55cf66e0c30d80bd9c176.png");
-  background-repeat: no-repeat;
-  background-size: 50px;
-  background-position-x: 99%;
-  background-position-y: center;
 }
 
 
 .orderform-template-holder #payment-data a#payment-group-instantPaymentPaymentGroup.payment-group-item {
   background-image: url("https://mfmgroup.vtexassets.com/assets/vtex.file-manager-graphql/images/cf5d7abb-9307-4d01-a515-9089227f6a8d___ada38aa614f97b242d4fc0cd55402ce8.png");
-  background-repeat: no-repeat;
-  background-size: 50px;
-  background-position-x: 99%;
-  background-position-y: center;
 }
 
 /* estilo base (não selecionado) */
@@ -441,6 +434,7 @@ body.body-order-form label {
 .orderform-template-holder .step #payment-data .payment-discounts-list table td.action a.submit.btn-success,
 .orderform-template-holder #payment-data .payment-discounts-list table td.action .step a.submit.btn-success {
   font-size: 40px;
+  letter-spacing: normal;
 }
 
 body.body-order-form #orderform-minicart-to-cart,
@@ -1086,11 +1080,138 @@ body.body-order-form .mini-cart tfoot .monetary {
 }
 
 @media screen and (max-width: 1000px) {
-  .product-name{
+  .orderform-template .cart-template.mini-cart .summary-template-holder .summary-coupon p {
+    border-top: none;
+  }
+
+  .coupon-fields {
+    padding-top: 15px;
+  }
+
+  .orderform-template .custom-cart-template-wrap {
+    padding: 20px;
+  }
+
+  .mini-cart .item .fn {
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .orderform-template .cart-template.mini-cart h2 {
+    font-size: 22px;
+  }
+
+  .orderform-template-holder #payment-data a#payment-group-MercadoPagoProPaymentGroup.payment-group-item,
+  .orderform-template-holder #payment-data a#payment-group-BoletoParceladoKoinPaymentGroup.payment-group-item,
+  .orderform-template-holder #payment-data a#payment-group-creditCardPaymentGroup.payment-group-item,
+  .orderform-template-holder #payment-data a#payment-group-bankInvoicePaymentGroup.payment-group-item,
+  .orderform-template-holder #payment-data a#payment-group-instantPaymentPaymentGroup.payment-group-item {
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-x: 97%;
+    background-position-y: center;
+  }
+
+  .orderform-template-holder #payment-data a#payment-group-instantPaymentPaymentGroup.payment-group-item::after,
+  .orderform-template-holder #payment-data a#payment-group-bankInvoicePaymentGroup.payment-group-item::after {
+    font-size: 10px;
+  }
+
+
+  .orderform-template-holder #payment-data p.link.link-gift-card *,
+  .orderform-template-holder #payment-data .payment-group-item * {
+    font-size: 18px !important;
+  }
+
+
+  .vtex-omnishipping-1-x-SummaryItemContent {
+    font-size: 18px !important;
+  }
+
+
+  .container-cart .cart-links.cart-links-bottom .btn-place-order-wrapper a {
+    padding: 17px 5px 10px 5px;
+  }
+
+  .orderform-template-holder .step.shipping-data .box-step>*#postalCode-finished-loading,
+  .orderform-template-holder .step.shipping-data .box-step>*:last-child {
+    border-radius: 26px;
+  }
+
+  .box-info {
+    font-size: 18px;
+  }
+
+  .btn-success,
+  .btn-success:hover,
+  .btn-success:active .btn-success:focus {
+    padding: 27px 0px;
+  }
+
+  .orderform-template-holder .step .submit.btn.btn-success,
+  .orderform-template-holder .step .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a.submit.btn-success,
+  .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .orderform-template-holder .step a.submit.btn-success,
+  .orderform-template-holder .step #payment-data .payment-discounts-list table td.action a.submit.btn-success,
+  .orderform-template-holder #payment-data .payment-discounts-list table td.action .step a.submit.btn-success {
+    font-size: 30px;
+    letter-spacing: normal;
+  }
+
+  .orderform-template-holder .step.client-profile-data .client-notice.notice {
+    font-size: 16px;
+  }
+
+  body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before,
+  body.v-custom-step-payment .payment-data .accordion-toggle>span:not(.payment-edit-link):before,
+  body.v-custom-step-shipping .shipping-data .accordion-toggle:before,
+  body.v-custom-step-profile .client-profile-data .accordion-toggle>span:before,
+  body.v-custom-step-email .client-pre-email h3.client-pre-email-h span:before,
+  body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before,
+  body.v-custom-step-payment .client-pre-email h3.client-pre-email-h span:before,
+  body.v-custom-step-payment .client-profile-data .accordion-toggle>span:before,
+  body.v-custom-step-payment .shipping-data .accordion-toggle:before,
+  body.v-custom-step-shipping .client-pre-email h3.client-pre-email-h span:before,
+  body.v-custom-step-shipping .client-profile-data .accordion-toggle>span:before,
+  body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before {
+    font-size: 21px;
+    padding: 2px;
+  }
+
+  .orderform-template-holder #client-profile-data form.client-pre-email .accordion-toggle>span,
+  .orderform-template-holder #client-profile-data .step.client-profile-data .accordion-toggle>span,
+  .orderform-template-holder #shipping-data .accordion-toggle>span,
+  .orderform-template-holder #payment-data .accordion-toggle>span,
+  .orderform-template-holder #shipping-data .accordion-toggle {
+    font-size: 23px;
+  }
+
+  .summary-template-holder .summary-coupon p.coupon-fields span {
+    margin: 0;
+  }
+
+  .coupon-form {
+    height: unset;
+  }
+
+  .coupon-fieldset input[type="text"] {
+    background-position: 10px 6px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><text x='8' y='22' fill='%23C0BABA' font-size='14' font-family='sans-serif'>Código Cupom</text></svg>");
+  }
+
+  .srp-address-title::after {
+    margin-left: 0px;
+  }
+
+  .product-name {
     margin-bottom: 10px;
   }
 
-  .table.cart-items td.product-image a, .table.cart-items td.product-image img{
+  .table.cart-items td.product-image a,
+  .table.cart-items td.product-image img {
     width: 80px;
   }
 
@@ -1106,7 +1227,7 @@ body.body-order-form .mini-cart tfoot .monetary {
     padding: 19px 19px;
   }
 
-  .cart-more-options #shipping-preview-container{
+  .cart-more-options #shipping-preview-container {
     margin: 19px;
   }
 
@@ -1137,30 +1258,24 @@ body.body-order-form .mini-cart tfoot .monetary {
     color: black !important;
   }
 
-
-
-
-  .orderform-template .cart-template.mini-cart .summary-template-holder input[type=text] {
+  .orderform-template .cart-template.mini-cart .summary-template-holder input[type=text],
+  .orderform-template .cart-template.mini-cart .summary-template-holder button[type=submit],
+  .orderform-template .cart-template.mini-cart .summary-template-holder p.coupon-fields span.info>span {
     width: auto;
+    height: 50px !important;
   }
 
   .summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type=submit] {
     width: 100%;
-    padding: 0 !important;
-    border: 1px solid #1E1E1E;
-    color: #1E1E1E;
+    padding: 0 10px !important;
+    border: 3px solid #696969;
+    color: #696969;
+    font-size: 18px;
   }
-
-
-
-
 
   .mini-cart .price {
     display: none;
   }
-
-
-
 
   .onda-v1 .f5 {
     font-size: 0.9rem;
@@ -1182,14 +1297,17 @@ body.body-order-form .mini-cart tfoot .monetary {
   .container-cart .coupon.summary-coupon .coupon-fields button.btn {
     font-size: 16px;
     color: #696969;
+    border: 3px solid #696969;
+    border-left: 3px solid #696969;
+    min-width: unset;
   }
 
   .container-cart .coupon.summary-coupon .coupon-fields .coupon-value {
     min-width: 200px;
+    height: 52px;
   }
 
   .forms.coupon-column.summary-coupon-wrap {
-    margin-top: 25px;
     margin-bottom: 10px;
   }
 
@@ -1215,10 +1333,6 @@ body.body-order-form .mini-cart tfoot .monetary {
     align-items: baseline;
     justify-content: center; */
   }
-
-
-
-
 
   .cart-more-options .srp-container .srp-delivery-header {
     text-align: left;
