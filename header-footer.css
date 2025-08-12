@@ -151,6 +151,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding-top: 20px;
+}
+
+.primeira-linha{
+  padding-top: 82px;
 }
 
 .footer {
@@ -165,6 +170,11 @@ body {
 
 .item-clicar-imagens{
   text-transform: none;
+  margin-left: 20%;
+}
+
+.tem-clicar img{
+  margin-left: 10%;
 }
 
 .item-licar-row {
