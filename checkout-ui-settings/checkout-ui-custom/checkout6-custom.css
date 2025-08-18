@@ -2,6 +2,153 @@
   font-family: Montserrat;
 }
 
+/* css reset  */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* css reset  */
+
+
+
+
+
+.orderform-template .cart-template.mini-cart .cart-fixed {
+  height: unset;
+}
+
 body a {
   color: #696969;
 }
@@ -83,7 +230,7 @@ body a {
 }
 
 .orderform-template .cart-template.mini-cart .summary-totalizers tbody td {
-  font-size: 22px;
+  font-size: 16px;
   display: unset;
   text-align: unset;
   width: unset;
@@ -285,16 +432,18 @@ body a {
   color: #C0BABA !important
 }
 
-.ship-postalCode::before {
-  content: "CEP";
-  font-size: 20px;
+.ship-postalCode label {
+  font-size: 20px !important;
+}
+
+.ship-postalCode {
   color: #C0BABA !important
 }
 
 div[data-bind*="phoneTemplate"] .client-phone:first-of-type::before {
   content: "Telefone";
-  font-size: 20px;
-  color: #C0BABA !important
+  font-size: 20px !important;
+  color: #C0BABA !important;
 }
 
 .client-document::before {
@@ -433,7 +582,7 @@ body.body-order-form label {
 .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .orderform-template-holder .step a.submit.btn-success,
 .orderform-template-holder .step #payment-data .payment-discounts-list table td.action a.submit.btn-success,
 .orderform-template-holder #payment-data .payment-discounts-list table td.action .step a.submit.btn-success {
-  font-size: 40px;
+  font-size: 32px;
   letter-spacing: normal;
 }
 
@@ -481,13 +630,15 @@ body.body-order-form #is-corporate-client {
   font-size: 27px;
 }
 
-.orderform-template-holder #client-profile-data form.client-pre-email .accordion-toggle>span,
+.orderform-template-holder #client-profile-data form.client-pre-email .accor.orderform-template-holder #payment-data p.link.link-gift-card *, .orderform-template-holder #payment-data .payment-group-item *dion-toggle>span,
 .orderform-template-holder #client-profile-data .step.client-profile-data .accordion-toggle>span,
 .orderform-template-holder #shipping-data .accordion-toggle>span,
 .orderform-template-holder #payment-data .accordion-toggle>span,
 .orderform-template-holder #shipping-data .accordion-toggle {
   font-size: 46px;
 }
+
+
 
 .summary-template-holder {
   padding: 30px;
@@ -644,6 +795,10 @@ body {
 .orderform-template .cart-template.mini-cart .summary-totalizers tbody {
   border-top: 1.98px solid #D9D9D9;
   border-top: 1.98px solid #D9D9D9;
+  padding: unset;
+  margin-right: 20px;
+  display: block;
+
 }
 
 .summary-template-holder .summary-coupon fieldset.coupon-fieldset input[type=text] {
@@ -762,7 +917,7 @@ body {
 }
 
 .container-cart .coupon.summary-coupon .coupon-fields .coupon-value {
-  width: 235px;
+  width: 180px;
   border-radius: 10px;
   border: 3px solid #C0BABA;
   height: 65px;
@@ -795,7 +950,7 @@ body {
 
 .container-cart .cart-links.cart-links-bottom .btn-place-order-wrapper a:before {
   content: "Continuar para pagamento";
-  font-size: 25px;
+  font-size: 22px;
   text-transform: none;
 }
 
@@ -976,7 +1131,7 @@ body.body-order-form .mini-cart .info {
 .orderform-template .cart-template.mini-cart .summary-totalizers tfoot tr td {
   font-size: 32px;
   text-wrap-mode: nowrap;
-  margin-right: 70px;
+  margin-right: 105px;
 }
 
 body.body-order-form .mini-cart tfoot .monetary {
@@ -1079,7 +1234,22 @@ body.body-order-form .mini-cart tfoot .monetary {
   box-shadow: none;
 }
 
+.row-fluid .full-cart.active, .row-fluid .orderform-template.active {
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 1000px) {
+  .orderform-template-holder #client-profile-data {
+    margin-top: 20px;
+  }
+
+
+  .ship-postalCode::before {
+    font-size: 20px;
+    color: #C0BABA !important
+  }
+
+
   .orderform-template .cart-template.mini-cart .summary-template-holder .summary-coupon p {
     border-top: none;
   }
@@ -1123,7 +1293,7 @@ body.body-order-form .mini-cart tfoot .monetary {
 
   .orderform-template-holder #payment-data p.link.link-gift-card *,
   .orderform-template-holder #payment-data .payment-group-item * {
-    font-size: 18px !important;
+    font-size: 14px !important;
   }
 
 
@@ -1256,13 +1426,21 @@ body.body-order-form .mini-cart tfoot .monetary {
 
   .orderform-template .cart-template.mini-cart .summary-totalizers tfoot tr td {
     color: black !important;
+    font-size: 25px;
   }
 
   .orderform-template .cart-template.mini-cart .summary-template-holder input[type=text],
-  .orderform-template .cart-template.mini-cart .summary-template-holder button[type=submit],
-  .orderform-template .cart-template.mini-cart .summary-template-holder p.coupon-fields span.info>span {
-    width: auto;
+  .orderform-template .cart-template.mini-cart .summary-template-holder button[type=submit] {
+    /* width: auto; */
     height: 50px !important;
+  }
+
+  /* .orderform-template .cart-template.mini-cart .summary-template-holder p.coupon-fields span.info>span {
+    width: 180px;
+  } */
+
+  .orderform-template .cart-template.mini-cart .summary-template-holder input[type=text] {
+    width: 180px;
   }
 
   .summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type=submit] {
